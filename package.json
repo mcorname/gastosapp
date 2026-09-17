@@ -1,0 +1,30 @@
+{
+  "name": "ai-money",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal finance app with local-first SQLite and AI pipelines",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "mobile": "npm run --workspace=apps/mobile start",
+    "backend": "npm run --workspace=apps/backend dev",
+    "build:shared": "npm run --workspace=packages/shared build",
+    "build": "npm run build:shared && npm run --workspace=apps/mobile build"
+  },
+  "keywords": [
+    "fintech",
+    "local-first",
+    "react-native",
+    "expo",
+    "sqlite",
+    "ai",
+    "whatsapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@ai-money/mobile",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo export --platform web"
+  },
+  "dependencies": {
+    "@ai-money/shared": "*",
+    "@expo/metro-runtime": "~57.0.15",
+    "@expo/vector-icons": "^14.0.4",
+    "expo": "~57.0.20",
+    "expo-sqlite": "~15.1.2",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-web": "^0.21.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~5.5.4"
+  },
+  "private": true
+}

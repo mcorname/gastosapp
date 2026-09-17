@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+test('web migration backs up original data and persistence fails atomically', async () => {
+  const legacy = {accounts:[{id:'a',name:'Caja',type:'cash',currency:'PEN',initial_balance:500,current_balance:535,created_at:1,updated_at:1}],categories:[],transactions:[{id:'t',account_id:'a',amount:35,type:'expense',date:'2026-09-17',currency:'PEN',created_at:1,updated_at:1}],budgets:[]};
+  const items = new Map([['ai_money_web_db_v4', JSON.stringify(legacy)]]);
+  let fail = false;
+  (globalThis as any).window = {localStorage:{getItem:(k:string)=>items.get(k) ?? null,setItem:(k:string,v:string)=>{if(fail)throw new Error('quota');items.set(k,v);}}};
+  const db = await import('../apps/mobile/src/db/database.web');
+  await db.initDatabase();
+  assert.equal(items.get('ai_money_web_db_v4_backup'), JSON.stringify(legacy));
+  const {getBalances} = await import('../packages/shared/src/finance');
+  assert.equal(getBalances(db.readLedger())[0].currentBalance, 465);
+  const next = db.readLedger(); next.accounts[0].name = 'Nueva';
+  fail=true; assert.throws(()=>db.writeLedger(next));
+  assert.equal(db.readLedger().accounts[0].name,'Caja');
+  fail=false; db.writeLedger(next);
+  assert.equal(JSON.parse(items.get('ai_money_web_db_v5')!).accounts[0].name,'Nueva');
+  await db.initDatabase();
+  assert.equal(db.readLedger().transactions.length,1);
+});
