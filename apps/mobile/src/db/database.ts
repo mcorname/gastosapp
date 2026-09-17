@@ -29,6 +29,15 @@ export function getPreference(key: string): string | undefined { return readLedg
 export async function initDatabase() {
   const db = getDatabase(); migrateDatabase(db);
   const ledger = readLedger();
-  if (!ledger.categories.length) { ledger.categories = initialLedger().categories; writeLedger(ledger); }
+  if (!ledger.categories.length || !ledger.accounts.length) {
+    const init = initialLedger();
+    if (!ledger.categories.length) ledger.categories = init.categories;
+    if (!ledger.accounts.length) {
+      ledger.accounts = init.accounts;
+      ledger.transactions = init.transactions;
+      ledger.settings = { ...init.settings, ...ledger.settings };
+    }
+    writeLedger(ledger);
+  }
   return db;
 }

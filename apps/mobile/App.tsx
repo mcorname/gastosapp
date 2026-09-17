@@ -70,6 +70,7 @@ function MainApp() {
     profileName,
     deleteTransaction,
     addTransaction,
+    resetToDefaultData,
   } = finance;
 
   const [activeTab, setActiveTab] = useState<NavTab>('home');
@@ -479,6 +480,34 @@ function MainApp() {
                         ))}
                       </View>
                     </View>
+                  </View>
+                </View>
+
+                <View style={styles.settingsGroupCard}>
+                  <View style={styles.settingsRow}>
+                    <View
+                      style={[styles.settingsIconBox, { backgroundColor: tokens.colors.brandLight }]}
+                    >
+                      <Feather name="refresh-cw" size={18} color={tokens.colors.brand} />
+                    </View>
+                    <View style={styles.settingsTextCol}>
+                      <Text style={styles.settingsRowTitle}>Cargar mi data / Datos de ejemplo</Text>
+                      <Text style={styles.settingsRowSubtitle}>
+                        Recarga las cuentas (BCP e Interbank, Efectivo) y todos los gastos reales de servicios (Luz, Agua, WIN, Celulares, etc.).
+                      </Text>
+                    </View>
+                    <Button
+                      secondary
+                      onPress={async () => {
+                        const ok = await confirmAction('¿Cargar la data completa (cuentas, gastos de servicios e ingresos de Mario)?');
+                        if (ok) {
+                          resetToDefaultData();
+                          setActiveTab('home');
+                        }
+                      }}
+                    >
+                      Cargar Data
+                    </Button>
                   </View>
                 </View>
 

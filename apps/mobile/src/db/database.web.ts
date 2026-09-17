@@ -345,13 +345,21 @@ export function getPreference(key: string): string | undefined { return readLedg
 export async function initDatabase(): Promise<WebDatabase> {
   if (typeof window !== 'undefined' && window.localStorage) {
     const legacy = window.localStorage.getItem(LEGACY_KEY);
-    if (!window.localStorage.getItem(STORAGE_KEY)) {
+    const existing = window.localStorage.getItem(STORAGE_KEY);
+    if (!existing) {
       if (legacy && !window.localStorage.getItem(`${LEGACY_KEY}_backup`)) window.localStorage.setItem(`${LEGACY_KEY}_backup`, legacy);
       const ledger = legacy ? readLedger() : initialLedger();
       if (legacy) ledger.settings.migrationNotice = 'Saldos recalculados desde el historial. Se conservó una copia de los datos anteriores en este dispositivo.';
       writeLedger(ledger);
+    } else {
+      const current = readLedger();
+      if (!current.accounts.length && !current.transactions.length) {
+        writeLedger(initialLedger());
+      }
     }
-  } else if (!state.categories.length) writeLedger(initialLedger());
+  } else if (!state.categories.length || !state.accounts.length) {
+    writeLedger(initialLedger());
+  }
   return getDatabase();
 }
 

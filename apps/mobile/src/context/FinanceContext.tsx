@@ -1,6 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { getBalances, enrichedTransactions, monthlyStats, localDate, money, cents, type Ledger, type TransactionInput } from '@ai-money/shared';
-import { initDatabase } from '../db/database';
+import { initDatabase, writeLedger } from '../db/database';
+import { initialLedger } from '../db/serialization';
 import { financeStore } from '../db/store';
 import type { AccountInput } from '../db/financeStore';
 
@@ -41,6 +42,7 @@ function useFinanceState() {
     adjustBalance:(id:string,value:number)=>run(()=>financeStore.adjustBalance(id,value)),
     deleteAccount:(id:string)=>run(()=>financeStore.deleteAccount(id)),
     addCategory:(input:Parameters<typeof financeStore.createCategory>[0])=>run(()=>financeStore.createCategory(input)),
+    resetToDefaultData: () => run(() => writeLedger(initialLedger())),
   };
 }
 const FinanceContext = createContext<ReturnType<typeof useFinanceState> | undefined>(undefined);
