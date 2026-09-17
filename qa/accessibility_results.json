@@ -1,0 +1,2213 @@
+[
+  {
+    "view": "Dashboard / Home (Desktop 1280x800)",
+    "url": "https://backend-gold-omega-57.vercel.app/",
+    "violationsCount": 6,
+    "incompleteCount": 1,
+    "passesCount": 27,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+        "nodeCount": 40,
+        "nodes": [
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">PATRIMONIO TOTAL</div>",
+            "target": [
+              ".r-1dnlk67 > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">INGRESOS</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2) > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #979792, background color: #fafaf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1x35g6 r-1ghxqbu r-b88u0q r-icto9i r-l00any\" style=\"color: rgb(14, 168, 118);\">S/ 5,000.00</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2) > .r-icto9i.r-1x35g6.r-l00any"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #0ea876, background color: #fafaf8, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\" style=\"color: rgb(255, 100, 61);\">GASTOS DEL MES</div>",
+            "target": [
+              ".r-mppose > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #ff643d, background color: #fff7f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1x35g6 r-1ghxqbu r-b88u0q r-icto9i r-l00any\" style=\"color: rgb(255, 100, 61);\">S/ 1,892.17</div>",
+            "target": [
+              ".r-mppose > .r-icto9i.r-1x35g6.r-l00any"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #ff643d, background color: #fff7f5, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1enofrn r-16dba41\" style=\"color: rgb(224, 83, 46);\">2 categorías activas</div>",
+            "target": [
+              ".r-mppose > .r-14gqq1x.r-18u37iz.r-1awozwy > .r-16dba41.r-1enofrn.css-146c3p1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #e0532e, background color: #fff7f5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">BALANCE DEL MES</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(4) > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #979792, background color: #fafaf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1gkfh8e r-b88u0q\" style=\"color: rgb(14, 168, 118);\">+62%</div>",
+            "target": [
+              ".r-b88u0q.r-1gkfh8e.css-146c3p1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-jwli3a r-1enofrn r-1kfrs79\">Nuevo gasto</div>",
+            "target": [
+              ".r-jwli3a.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #ffffff, background color: #0ea876, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-1ikidpy r-tsynxw\">Descripción</div>",
+            "target": [
+              ".r-9aw3ui.r-1i6wzkk.r-1loqt21:nth-child(1) > .r-1ikidpy.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #979792, background color: #f8f8f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-1ikidpy r-tsynxw\">Categoría</div>",
+            "target": [
+              ".r-9aw3ui.r-1i6wzkk.r-1loqt21:nth-child(2) > .r-1ikidpy.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #979792, background color: #f8f8f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-1ikidpy r-tsynxw\">Cuenta</div>",
+            "target": [
+              ".r-9aw3ui.r-1i6wzkk.r-1loqt21:nth-child(3) > .r-1ikidpy.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #979792, background color: #f8f8f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-1ikidpy r-tsynxw\">Fecha</div>",
+            "target": [
+              ".r-9aw3ui.r-1i6wzkk.r-1loqt21:nth-child(4) > .r-1ikidpy.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #979792, background color: #f8f8f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-1ikidpy r-tsynxw\" style=\"text-align: right;\">Monto</div>",
+            "target": [
+              ".r-9aw3ui.r-1i6wzkk.r-1loqt21:nth-child(5) > .r-1ikidpy.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #979792, background color: #f8f8f6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Plan móvil Brenda</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 29.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Plan móvil Mario</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 62.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Plan móvil Diana</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 43.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Tarjeta Saga Falabella</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">18 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 158.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Telefónica / Movistar Surco</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">14 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 126.67</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Gas Natural Cálidda 01</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 22.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-16rdnz r-1gkfh8e r-1cvj4g8\">Gas Natural Cálidda 02</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(1) > .r-1cvj4g8.r-1iln25a.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(4) > .r-16dba41.r-16rdnz.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 33.00</div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(5) > .r-19fsyyn.r-vbi3md.r-afbznj"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #ff643d, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1enofrn r-1kfrs79\">Ver todas</div>",
+            "target": [
+              ".r-1vxynig.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #0ea876, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-1ghxqbu r-1kfrs79 r-1pexk7n\">S/130</div>",
+            "target": [
+              ".r-1pi2tsx.r-17s6mgv.r-ojf8lh:nth-child(1) > .r-10x49cs.r-1pexk7n.r-1ghxqbu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-1ghxqbu r-1kfrs79 r-1pexk7n\">S/1470</div>",
+            "target": [
+              ".r-1pi2tsx.r-17s6mgv.r-ojf8lh:nth-child(2) > .r-10x49cs.r-1pexk7n.r-1ghxqbu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-1ghxqbu r-1kfrs79 r-1pexk7n\">S/292</div>",
+            "target": [
+              ".r-1pi2tsx.r-17s6mgv.r-ojf8lh:nth-child(3) > .r-10x49cs.r-1pexk7n.r-1ghxqbu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1gkfh8e r-1kfrs79\">En línea</div>",
+            "target": [
+              ".r-1vxynig.r-1kfrs79.r-1gkfh8e"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "nested-interactive",
+        "impact": "serious",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+        "help": "Interactive controls must not be nested",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<button aria-label=\"Abrir detalle del patrimonio\" role=\"button\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-6ncur5 r-rs99b7 r-9d6sbb r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-14lw9ot r-1dnlk67 r-q0oxfv\" type=\"button\" style=\"transition-duration: 0s;\">",
+            "target": [
+              ".r-1dnlk67"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+        "nodeCount": 75,
+        "nodes": [
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-uaa2di\">",
+            "target": [
+              ".r-840iz4 > .r-uaa2di.r-18u37iz.r-1awozwy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1qheqgf r-4cddc5 r-1dzdj1l r-rs99b7 r-18u37iz r-1r8g8re r-3o4zer r-1jocfgc\">",
+            "target": [
+              ".r-1qheqgf"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-z5qs1h\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1x35g6 r-b88u0q r-foe95m\">Hola, Mario</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787\">Aquí tienes el resumen de tus finanzas.</div></div>",
+            "target": [
+              ".r-f4gmv6.r-1wtj0ep.r-18u37iz > .r-z5qs1h.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-n6v787 r-1kfrs79 r-is05cd r-q4m81j\">Setiembre de 2026</div>",
+            "target": [
+              ".r-q4m81j"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-1aj5ce6 r-4cddc5\">",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-mppose r-1l7l6ar\">",
+            "target": [
+              ".r-mppose"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-1aj5ce6 r-4cddc5\">",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1i10wst r-b88u0q r-afbznj\">Todos los gastos del mes</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-1enofrn r-1bymd8e\">12 gastos registrados en este período</div></div>",
+            "target": [
+              ".r-1w6e6rj.r-1ssbvtb.r-1wtj0ep > .css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-zimjv1 r-mf523v r-qklmqi r-18u37iz r-ytbthy r-3pj75a\">",
+            "target": [
+              ".r-ytbthy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 29.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 62.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 43.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">18 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 158.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">14 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 126.67</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 22.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 33.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">10 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 141.60</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">10 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 969.60</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">8 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 65.30</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">8 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 112.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">5 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 130.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1ssbvtb r-kc8jnq\">",
+            "target": [
+              ".r-kc8jnq"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-a023e6 r-1l05qu9 r-afbznj\">Resumen por categoría</div>",
+            "target": [
+              ".r-1wtj0ep.r-18u37iz.r-1awozwy > .r-a023e6.r-afbznj.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1i71y14\">",
+            "target": [
+              ".r-f4gmv6.r-whuqzp.r-6ncur5:nth-child(1) > .r-1i71y14.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-14lw9ot r-4cddc5 r-6ncur5 r-rs99b7 r-9d6sbb r-f4gmv6 r-whuqzp\">",
+            "target": [
+              ".r-f4gmv6.r-whuqzp.r-6ncur5:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-1wtj0ep\">",
+            "target": [
+              ".r-1ssbvtb.r-whuqzp.r-6ncur5 > .r-1wtj0ep.r-18u37iz.r-1awozwy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787 r-hjklzo\">Tu mayor gasto del mes está en Vivienda y Servicios. Representa el 91.6% de tus gastos.</div>",
+            "target": [
+              ".r-hjklzo"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "id": "target-size",
+        "impact": "serious",
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "description": "Ensure touch targets have sufficient size and space",
+        "help": "All touch targets must be 24px large, or leave sufficient space",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<button aria-label=\"Ocultar importes\" role=\"button\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73\" type=\"button\" style=\"transition-duration: 0s;\">",
+            "target": [
+              "button[aria-label=\"Ocultar importes\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Target has insufficient size (14px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Movimientos Tab",
+    "url": "https://backend-gold-omega-57.vercel.app/",
+    "violationsCount": 4,
+    "incompleteCount": 1,
+    "passesCount": 27,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-jwli3a r-1b43r93 r-1kfrs79 r-q4m81j\">Nuevo movimiento</div>",
+            "target": [
+              ".r-jwli3a.r-q4m81j.r-1b43r93"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #ffffff, background color: #0ea876, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+        "nodeCount": 4,
+        "nodes": [
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-uaa2di\">",
+            "target": [
+              ".r-uaa2di.r-18u37iz.r-1awozwy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1qheqgf r-4cddc5 r-1dzdj1l r-rs99b7 r-18u37iz r-1r8g8re r-3o4zer r-1jocfgc\">",
+            "target": [
+              ".r-1qheqgf"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-evnaw r-b88u0q r-foe95m\">Movimientos</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787 r-14yzgew\">13 operaciones visibles</div></div>",
+            "target": [
+              ".r-1w6e6rj.r-1wtj0ep.r-f4gmv6 > .css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-n6v787 r-1kfrs79 r-is05cd r-q4m81j\">Setiembre de 2026</div>",
+            "target": [
+              ".r-is05cd"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Cuentas Tab",
+    "url": "https://backend-gold-omega-57.vercel.app/",
+    "violationsCount": 4,
+    "incompleteCount": 1,
+    "passesCount": 25,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+        "nodeCount": 7,
+        "nodes": [
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-jwli3a r-n6v787 r-1kfrs79\">Nueva cuenta</div>",
+            "target": [
+              ".r-1s5swlz > .r-jwli3a.r-1kfrs79.r-n6v787"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #ffffff, background color: #0ea876, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1ws2f5x r-1bymd8e\">52 movimientos asociados</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(1) > .r-1599tul.r-cnw61z.css-g5y9jx > .r-16rdnz.r-1bymd8e.r-1ws2f5x"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1enofrn r-1kfrs79\">Ajustar saldo</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(1) > .r-b4x6im.r-5kkj8d.r-tskmnb > .r-1k0jark.r-580adz.r-1yd117h:nth-child(1) > .r-1vxynig.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1enofrn r-1kfrs79\">Transferir</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(1) > .r-b4x6im.r-5kkj8d.r-tskmnb > .r-1k0jark.r-580adz.r-1yd117h:nth-child(2) > .r-1vxynig.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1ws2f5x r-1bymd8e\">0 movimientos asociados</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(2) > .r-1599tul.r-cnw61z.css-g5y9jx > .r-16rdnz.r-1bymd8e.r-1ws2f5x"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1enofrn r-1kfrs79\">Ajustar saldo</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(2) > .r-b4x6im.r-5kkj8d.r-tskmnb > .r-1k0jark.r-580adz.r-1yd117h:nth-child(1) > .r-1vxynig.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1vxynig r-1enofrn r-1kfrs79\">Transferir</div>",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(2) > .r-b4x6im.r-5kkj8d.r-tskmnb > .r-1k0jark.r-580adz.r-1yd117h:nth-child(2) > .r-1vxynig.r-1kfrs79.r-1enofrn"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+        "nodeCount": 7,
+        "nodes": [
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-uaa2di\">",
+            "target": [
+              ".r-uaa2di"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1qheqgf r-4cddc5 r-1dzdj1l r-rs99b7 r-18u37iz r-1r8g8re r-3o4zer r-1jocfgc\">",
+            "target": [
+              ".r-1r8g8re"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-evnaw r-b88u0q r-foe95m\">Cuentas financieras</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787 r-1bymd8e\">2 cuentas activas · Total: S/ 22,931.32</div></div>",
+            "target": [
+              ".r-1w6e6rj.r-1ssbvtb.r-1wtj0ep > .css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-13awgt0 r-18u37iz r-1ssbvtb\">",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(1) > .r-1habvwh.r-1wtj0ep.r-18u37iz > .r-1ssbvtb.r-13awgt0.r-18u37iz"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1599tul r-cnw61z\">",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(1) > .r-1599tul.r-cnw61z.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-13awgt0 r-18u37iz r-1ssbvtb\">",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(2) > .r-1habvwh.r-1wtj0ep.r-18u37iz > .r-1ssbvtb.r-13awgt0.r-18u37iz"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1599tul r-cnw61z\">",
+            "target": [
+              ".r-6ncur5.r-1jsugan.r-1pcd2l5:nth-child(2) > .r-1599tul.r-cnw61z.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Ajustes Tab",
+    "url": "https://backend-gold-omega-57.vercel.app/",
+    "violationsCount": 4,
+    "incompleteCount": 1,
+    "passesCount": 25,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1enofrn r-1kfrs79 r-1vxynig\">PEN</div>",
+            "target": [
+              ".r-1vxynig.r-1enofrn.r-1kfrs79"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+        "nodeCount": 15,
+        "nodes": [
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-uaa2di\">",
+            "target": [
+              ".r-uaa2di"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1qheqgf r-4cddc5 r-1dzdj1l r-rs99b7 r-18u37iz r-1r8g8re r-3o4zer r-1jocfgc\">",
+            "target": [
+              ".r-1qheqgf"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-evnaw r-b88u0q r-foe95m\">Ajustes</div>",
+            "target": [
+              ".r-evnaw"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787 r-14yzgew\">Preferencias y configuración del sistema</div>",
+            "target": [
+              ".r-14yzgew"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-14lw9ot r-4cddc5 r-6ncur5 r-rs99b7 r-9d6sbb r-nsbfu8\">",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1dzdj1l r-1a8msfu r-1777fci r-131xog0\" style=\"background-color: rgb(230, 247, 241);\"><div dir=\"auto\" class=\"css-146c3p1 r-lrvibr\" style=\"font-size: 18px; color: rgb(14, 168, 118); font-family: feather; font-weight: normal; font-style: normal;\"></div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(4) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1a8msfu.r-131xog0.r-1dzdj1l"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-13awgt0 r-9aw3ui r-1y50co4\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1b43r93 r-1kfrs79\">Cuentas financieras</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-1enofrn r-5fcqz0\">Gestiona nombres, tipos, saldos y ajustes desde la vista de cuentas.</div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(4) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1y50co4.r-9aw3ui.r-13awgt0"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1dzdj1l r-1a8msfu r-1777fci r-131xog0\" style=\"background-color: rgb(237, 244, 255);\"><div dir=\"auto\" class=\"css-146c3p1 r-lrvibr\" style=\"font-size: 18px; color: rgb(79, 142, 247); font-family: feather; font-weight: normal; font-style: normal;\"></div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(5) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1a8msfu.r-131xog0.r-1dzdj1l"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-13awgt0 r-9aw3ui r-1y50co4\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1b43r93 r-1kfrs79\">Privacidad</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-1enofrn r-5fcqz0\">Oculta o muestra todos los importes sensibles.</div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(5) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1y50co4.r-9aw3ui.r-13awgt0"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1dzdj1l r-1a8msfu r-1777fci r-131xog0\" style=\"background-color: rgb(237, 244, 255);\"><div dir=\"auto\" class=\"css-146c3p1 r-lrvibr\" style=\"font-size: 18px; color: rgb(79, 142, 247); font-family: feather; font-weight: normal; font-style: normal;\"></div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(6) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1a8msfu.r-131xog0.r-1dzdj1l"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1b43r93 r-1kfrs79\">Moneda de resumen</div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(6) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1y50co4.r-9aw3ui.r-13awgt0 > .r-1b43r93.r-1nto9hj.r-1kfrs79"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-1enofrn r-5fcqz0\">Los totales no mezclan monedas. Elige cuál revisar.</div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(6) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1y50co4.r-9aw3ui.r-13awgt0 > .r-5fcqz0.r-1enofrn.r-lmf75h"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1dzdj1l r-1a8msfu r-1777fci r-131xog0\" style=\"background-color: rgb(230, 247, 241);\"><div dir=\"auto\" class=\"css-146c3p1 r-lrvibr\" style=\"font-size: 18px; color: rgb(14, 168, 118); font-family: feather; font-weight: normal; font-style: normal;\"></div></div>",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(7) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1a8msfu.r-131xog0.r-1dzdj1l"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-13awgt0 r-9aw3ui r-1y50co4\">",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(7) > .r-1habvwh.r-1w6e6rj.r-1i71y14 > .r-1y50co4.r-9aw3ui.r-13awgt0"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-14lw9ot r-4cddc5 r-6ncur5 r-rs99b7 r-9d6sbb r-nsbfu8\">",
+            "target": [
+              ".r-6ncur5.r-nsbfu8.r-4cddc5:nth-child(8)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "view": "Dashboard / Home (Mobile 390x844)",
+    "url": "https://backend-gold-omega-57.vercel.app/",
+    "violationsCount": 6,
+    "incompleteCount": 1,
+    "passesCount": 27,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+        "nodeCount": 12,
+        "nodes": [
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">PATRIMONIO TOTAL</div>",
+            "target": [
+              ".r-1dnlk67 > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">INGRESOS</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2) > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #979792, background color: #fafaf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1x35g6 r-1ghxqbu r-b88u0q r-icto9i r-l00any\" style=\"color: rgb(14, 168, 118);\">S/ 5,000.00</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2) > .r-icto9i.r-1x35g6.r-l00any"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #0ea876, background color: #fafaf8, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\" style=\"color: rgb(255, 100, 61);\">GASTOS DEL MES</div>",
+            "target": [
+              ".r-mppose > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #ff643d, background color: #fff7f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1x35g6 r-1ghxqbu r-b88u0q r-icto9i r-l00any\" style=\"color: rgb(255, 100, 61);\">S/ 1,892.17</div>",
+            "target": [
+              ".r-mppose > .r-icto9i.r-1x35g6.r-l00any"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #ff643d, background color: #fff7f5, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1enofrn r-16dba41\" style=\"color: rgb(224, 83, 46);\">2 categorías activas</div>",
+            "target": [
+              ".r-mppose > .r-14gqq1x.r-18u37iz.r-1awozwy > .r-16dba41.r-1enofrn.css-146c3p1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.64 (foreground color: #e0532e, background color: #fff7f5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1gkfh8e r-1l05qu9 r-3b040n r-tsynxw\">BALANCE DEL MES</div>",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(4) > .r-5oul0u.r-1wtj0ep.r-18u37iz > .r-3b040n.r-tsynxw.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.8 (foreground color: #979792, background color: #fafaf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1gkfh8e r-b88u0q\" style=\"color: rgb(14, 168, 118);\">+62%</div>",
+            "target": [
+              ".r-b88u0q.r-1gkfh8e.css-146c3p1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #0ea876, background color: #e6f7f1, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-10x49cs r-1vxynig r-1l05qu9\">Inicio</div>",
+            "target": [
+              ".r-1vxynig.r-10x49cs.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.05 (foreground color: #0ea876, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-majxgm\">Movimientos</div>",
+            "target": [
+              ".r-1599tul.r-13awgt0.r-1i6wzkk:nth-child(2) > .r-10x49cs.r-majxgm.r-16rdnz"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-majxgm\">Cuentas</div>",
+            "target": [
+              ".r-1599tul.r-13awgt0.r-1i6wzkk:nth-child(3) > .r-10x49cs.r-majxgm.r-16rdnz"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-10x49cs r-majxgm\">Ajustes</div>",
+            "target": [
+              ".r-1599tul.r-13awgt0.r-1i6wzkk:nth-child(4) > .r-10x49cs.r-majxgm.r-16rdnz"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.93 (foreground color: #979792, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "nested-interactive",
+        "impact": "serious",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+        "help": "Interactive controls must not be nested",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/nested-interactive?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<button aria-label=\"Abrir detalle del patrimonio\" role=\"button\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-6ncur5 r-rs99b7 r-9d6sbb r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-14lw9ot r-1dnlk67 r-q0oxfv\" type=\"button\" style=\"transition-duration: 0s;\">",
+            "target": [
+              ".r-1dnlk67"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<html lang=\"en\">",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+        "nodeCount": 76,
+        "nodes": [
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-840iz4\">",
+            "target": [
+              ".r-840iz4"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1qheqgf r-4cddc5 r-1dzdj1l r-rs99b7 r-18u37iz r-1r8g8re r-3o4zer r-1jocfgc\">",
+            "target": [
+              ".r-1qheqgf"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-z5qs1h\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1x35g6 r-b88u0q r-foe95m\">Hola, Mario</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787\">Aquí tienes el resumen de tus finanzas.</div></div>",
+            "target": [
+              ".r-1i71y14.css-g5y9jx:nth-child(1) > .r-z5qs1h.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-n6v787 r-1kfrs79 r-is05cd r-q4m81j\">Setiembre de 2026</div>",
+            "target": [
+              ".r-q4m81j"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-1aj5ce6 r-4cddc5\">",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-mppose r-1l7l6ar\">",
+            "target": [
+              ".r-mppose"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-6ncur5 r-rs99b7 r-9d6sbb r-13awgt0 r-1wtj0ep r-1rd2zbf r-pfqljz r-whuqzp r-1aj5ce6 r-4cddc5\">",
+            "target": [
+              ".r-1rd2zbf.r-1aj5ce6.r-whuqzp:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx\"><div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-1i10wst r-b88u0q r-afbznj\">Todos los gastos del mes</div><div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-1enofrn r-1bymd8e\">12 gastos registrados en este período</div></div>",
+            "target": [
+              ".r-1w6e6rj.r-1ssbvtb.r-1wtj0ep > .css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-zimjv1 r-mf523v r-qklmqi r-18u37iz r-ytbthy r-3pj75a\">",
+            "target": [
+              ".r-ytbthy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 29.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(2) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 62.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(3) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">20 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 43.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(4) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">18 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 158.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(5) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">14 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 126.67</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(6) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 22.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(7) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">12 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 33.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(8) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">10 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 141.60</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(9) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">10 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 969.60</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(10) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">8 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 65.30</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(11) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">8 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 112.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(12) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 2.2 1 0%;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%; flex-direction: row; align-items: center; gap: 8px;\">",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.8 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-8akbws r-krxsd3 r-dnmrzs r-1qsk4np r-1udbk01 r-lmf75h r-1enofrn r-16dba41 r-1cwl3u0\" style=\"-webkit-line-clamp: 2;\">Cuenta Bancaria (BCP / Interbank)</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.2 1 0%;\"><div dir=\"auto\" class=\"css-146c3p1 r-16rdnz r-1enofrn r-16dba41 r-3s2u2q\">5 sep. 2026</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1777fci\" style=\"flex: 1.3 1 0%; align-items: flex-end;\"><div dir=\"auto\" class=\"css-146c3p1 r-19fsyyn r-vbi3md r-1ghxqbu r-1l05qu9 r-afbznj r-3s2u2q\">-S/ 130.00</div></div>",
+            "target": [
+              ".r-1jlaj7q.r-19yznuf.r-11f147o:nth-child(13) > .r-1777fci.css-g5y9jx:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1ssbvtb r-kc8jnq\">",
+            "target": [
+              ".r-kc8jnq"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-1nto9hj r-a023e6 r-1l05qu9 r-afbznj\">Resumen por categoría</div>",
+            "target": [
+              ".r-1wtj0ep.r-18u37iz.r-1awozwy > .r-a023e6.r-afbznj.r-1l05qu9"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1i71y14\">",
+            "target": [
+              ".r-f4gmv6.r-whuqzp.r-6ncur5:nth-child(1) > .r-1i71y14.css-g5y9jx"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-14lw9ot r-4cddc5 r-6ncur5 r-rs99b7 r-9d6sbb r-f4gmv6 r-whuqzp\">",
+            "target": [
+              ".r-f4gmv6.r-whuqzp.r-6ncur5:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-18u37iz r-1wtj0ep\">",
+            "target": [
+              ".r-1ssbvtb.r-whuqzp.r-6ncur5 > .r-1wtj0ep.r-18u37iz.r-1awozwy"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div dir=\"auto\" class=\"css-146c3p1 r-lmf75h r-n6v787 r-hjklzo\">Tu mayor gasto del mes está en Vivienda y Servicios. Representa el 91.6% de tus gastos.</div>",
+            "target": [
+              ".r-hjklzo"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          },
+          {
+            "html": "<div class=\"css-g5y9jx r-1awozwy r-1pi6541 r-r7hgts r-5kkj8d r-1p0dtai r-18u37iz r-sga3zk r-a2tzq0 r-1d2f490 r-is05cd r-u8s1d r-zchlnj r-1e2svnr\">",
+            "target": [
+              ".r-1pi6541"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          }
+        ]
+      },
+      {
+        "id": "target-size",
+        "impact": "serious",
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "description": "Ensure touch targets have sufficient size and space",
+        "help": "All touch targets must be 24px large, or leave sufficient space",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright",
+        "nodeCount": 1,
+        "nodes": [
+          {
+            "html": "<button aria-label=\"Ocultar importes\" role=\"button\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73\" type=\"button\" style=\"transition-duration: 0s;\">",
+            "target": [
+              "button[aria-label=\"Ocultar importes\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Target has insufficient size (14px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
+          }
+        ]
+      }
+    ]
+  }
+]

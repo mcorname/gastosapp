@@ -11,25 +11,27 @@ export const tokens = {
     surfaceTertiary: '#EBEBE8',    // Segmented controls y divisores
     surfaceSelected: 'rgba(20, 20, 18, 0.05)',
 
-    // Identidad de marca (AI Money Emerald Green)
-    brand: '#0EA876',
-    brandHover: '#0A9468',
-    brandLight: '#E6F7F1',
-    brandLightHover: '#D8F3EA',
+    // Identidad de marca (AI Money Emerald Green accesible)
+    brand: '#088057',
+    brandHover: '#066B48',
+    brandText: '#066B48',
+    brandLight: '#E3F5EE',
+    brandLightHover: '#D4EFE4',
 
-    // Gastos y advertencias (Fintech Coral / Naranja de contraste)
-    expense: '#FF643D',
-    expenseHover: '#FF6B45',
-    expenseLight: '#FFF0EE',
+    // Gastos y advertencias (Fintech Coral accesible)
+    expense: '#C73614',
+    expenseHover: '#B22F10',
+    expenseText: '#A8280B',
+    expenseLight: '#FEECE7',
 
     // Semánticos
-    success: '#0EA876',
-    successLight: '#E6F7F1',
-    danger: '#FF643D',
-    dangerLight: '#FFF0EE',
-    warning: '#F39A38',
+    success: '#088057',
+    successLight: '#E3F5EE',
+    danger: '#C73614',
+    dangerLight: '#FEECE7',
+    warning: '#9E5B0E',
     warningLight: '#FFF5E9',
-    info: '#4F8EF7',
+    info: '#1E6FE8',
     infoLight: '#EDF4FF',
 
     // Navegación oscura destacada
@@ -37,15 +39,15 @@ export const tokens = {
 
     // Tipografía
     textPrimary: '#171715',
-    textSecondary: '#696966',
-    textTertiary: '#979792',
-    textMuted: '#B4B4AF',
+    textSecondary: '#4A4A46',
+    textTertiary: '#696964',
+    textMuted: '#7E7E79',
 
     // Bordes y separadores
-    borderSubtle: 'rgba(20, 20, 18, 0.06)',
-    borderDefault: 'rgba(20, 20, 18, 0.08)',
-    borderActive: 'rgba(14, 168, 118, 0.35)',
-    separator: 'rgba(20, 20, 18, 0.05)',
+    borderSubtle: 'rgba(20, 20, 18, 0.08)',
+    borderDefault: 'rgba(20, 20, 18, 0.12)',
+    borderActive: 'rgba(8, 128, 87, 0.4)',
+    separator: 'rgba(20, 20, 18, 0.06)',
   },
 
   radii: {

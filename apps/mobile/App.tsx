@@ -198,7 +198,7 @@ function MainApp() {
         )}
 
         {/* Main Canvas */}
-        <View style={styles.mainCanvas}>
+        <View style={styles.mainCanvas} accessibilityRole="main">
           {/* Top Navigation Bar */}
           <TopNavBar
             activeTab={activeTab}
@@ -224,7 +224,13 @@ function MainApp() {
                 {/* Greeting & Period Selector Row */}
                 <View style={isDesktop ? styles.greetingRowDesktop : styles.greetingRowMobile}>
                   <View style={styles.greetingTitleCol}>
-                    <Text style={styles.greetingTitle}>Hola, {profileName}</Text>
+                    <Text
+                      style={styles.greetingTitle}
+                      accessibilityRole="header"
+                      {...(Platform.OS === 'web' ? ({ 'aria-level': 1 } as any) : {})}
+                    >
+                      Hola, {profileName}
+                    </Text>
                     <Text style={styles.greetingSubtitle}>
                       Aquí tienes el resumen de tus finanzas.
                     </Text>

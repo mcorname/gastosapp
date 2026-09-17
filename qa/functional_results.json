@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "module": "Datos Iniciales",
+      "action": "Carga de datos predeterminados en primer ingreso",
+      "expected": "Datos de Mario cargados (BCP, WIN, Sueldo)",
+      "real": "Cuentas y gastos del mes presentes",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "action": "Navegar a tab Movimientos",
+      "expected": "Vista de Movimientos se muestra",
+      "real": "Renderizado exitoso",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "action": "Navegar a tab Cuentas",
+      "expected": "Vista de Cuentas se muestra",
+      "real": "Renderizado exitoso",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "action": "Navegar a tab Análisis",
+      "expected": "Vista de Análisis se muestra",
+      "real": "Renderizado exitoso",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "action": "Navegar a tab Ajustes",
+      "expected": "Vista de Ajustes se muestra",
+      "real": "Renderizado exitoso",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "action": "Navegar a tab Inicio",
+      "expected": "Vista de Inicio se muestra",
+      "real": "Renderizado exitoso",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Selector Meses",
+      "action": "Cambiar mes a Junio",
+      "expected": "Muestra período Junio 2026",
+      "real": "Texto de Junio visible",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Selector Meses",
+      "action": "Cambiar mes a Setiembre",
+      "expected": "Muestra período Setiembre 2026",
+      "real": "Setiembre activo",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Búsqueda",
+      "action": "Filtrar por texto WIN",
+      "expected": "Solo muestra fila de WIN",
+      "real": "Filtro reactivo aplicado correctamente",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Tabla Gastos",
+      "action": "Ordenar por columna MONTO",
+      "expected": "Tabla reordena filas por monto",
+      "real": "Ordenamiento ejecutado sin excepciones",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "CRUD Transacciones",
+      "action": "Creación de gasto",
+      "expected": "Guardado exitoso",
+      "real": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '+ Nuevo gasto' }).first()\u001b[22m\n",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "bug": ""
+    },
+    {
+      "module": "Métrica Patrimonio",
+      "action": "Clic en Patrimonio Total",
+      "expected": "Abre modal de patrimonio",
+      "real": "Modal no abrió al hacer clic",
+      "status": "FAIL",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Navegación Modal",
+      "action": "Botón Gestionar cuentas en modal",
+      "expected": "Navega al tab de cuentas",
+      "real": "Navegación exitosa",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Módulo Cuentas",
+      "action": "Ajustar saldo",
+      "expected": "Abre modal de ajuste",
+      "real": "No abrió el modal",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "bug": ""
+    },
+    {
+      "module": "Módulo Cuentas",
+      "action": "Ajustar saldo de cuenta",
+      "expected": "Cálculo de delta y auditoría",
+      "real": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Cancelar' })\u001b[22m\n",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "bug": ""
+    },
+    {
+      "module": "Mario IA",
+      "action": "Asistente conversacional",
+      "expected": "Interacción con Mario IA",
+      "real": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Inicio', exact: true }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"button\" type=\"button\" aria-label=\"Inicio\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-1dzdj1l r-ur6pnr r-1777fci r-1mhb1uw\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "bug": ""
+    },
+    {
+      "module": "Privacidad",
+      "action": "Toggle de privacidad",
+      "expected": "Ocultar / Mostrar cifras",
+      "real": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Ajustes', exact: true }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"button\" type=\"button\" aria-label=\"Ajustes\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-1dzdj1l r-ur6pnr r-1777fci r-1mhb1uw\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "status": "FAIL",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Persistencia",
+      "action": "Recarga de navegador",
+      "expected": "Consistencia de datos",
+      "real": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Inicio', exact: true }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"button\" type=\"button\" aria-label=\"Inicio\" class=\"css-g5y9jx r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-1dzdj1l r-ur6pnr r-1777fci r-1mhb1uw\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"css-g5y9jx r-1awozwy r-knva5p r-13awgt0 r-1777fci r-1pcd2l5\">…</div> from <div>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "bug": ""
+    }
+  ],
+  "consoleErrors": []
+}

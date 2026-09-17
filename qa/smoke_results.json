@@ -1,0 +1,216 @@
+{
+  "targetURL": "https://backend-gold-omega-57.vercel.app/",
+  "statusCode": 200,
+  "loadTimeMs": 10579,
+  "pageTitle": "mobile",
+  "consoleLogs": [],
+  "networkRequestsCount": 4,
+  "failedRequests": [],
+  "elements": {
+    "buttonsCount": 38,
+    "buttonsSample": [
+      {
+        "text": "",
+        "ariaLabel": "Inicio",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Movimientos",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Cuentas",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Nuevo movimiento",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Mario IA",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Registrar con IA",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Ajustes",
+        "role": "button"
+      },
+      {
+        "text": "Inicio",
+        "ariaLabel": "Inicio",
+        "role": "button"
+      },
+      {
+        "text": "Movimientos",
+        "ariaLabel": "Movimientos",
+        "role": "button"
+      },
+      {
+        "text": "Cuentas",
+        "ariaLabel": "Cuentas",
+        "role": "button"
+      },
+      {
+        "text": "Análisis",
+        "ariaLabel": "Análisis",
+        "role": "button"
+      },
+      {
+        "text": "Mario IA",
+        "ariaLabel": "Mario IA",
+        "role": "button"
+      },
+      {
+        "text": "Ajustes",
+        "ariaLabel": "Ajustes",
+        "role": "button"
+      },
+      {
+        "text": "M Mario ",
+        "ariaLabel": "Ajustes de perfil",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Mes anterior",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Mes siguiente",
+        "role": "button"
+      },
+      {
+        "text": "Jun",
+        "ariaLabel": "",
+        "role": "button"
+      },
+      {
+        "text": "Jul",
+        "ariaLabel": "",
+        "role": "button"
+      },
+      {
+        "text": "Ago",
+        "ariaLabel": "",
+        "role": "button"
+      },
+      {
+        "text": "Set",
+        "ariaLabel": "",
+        "role": "button"
+      },
+      {
+        "text": "PATRIMONIO TOTAL   S/ 22,931.32 2 cuentas · Actualizado hoy",
+        "ariaLabel": "Abrir detalle del patrimonio",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Ocultar importes",
+        "role": "button"
+      },
+      {
+        "text": " Filtros",
+        "ariaLabel": "Filtros",
+        "role": "button"
+      },
+      {
+        "text": " Nuevo gasto",
+        "ariaLabel": "Nuevo gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "",
+        "ariaLabel": "Acciones de gasto",
+        "role": "button"
+      },
+      {
+        "text": "Ver todas ",
+        "ariaLabel": "Ver todas las categorías",
+        "role": "button"
+      },
+      {
+        "text": "Preguntarle a Mario ",
+        "ariaLabel": "Preguntarle a Mario",
+        "role": "button"
+      }
+    ],
+    "inputs": [
+      {
+        "placeholder": "Buscar movimientos, categorías, cuentas...",
+        "type": "",
+        "value": ""
+      }
+    ],
+    "storageData": {
+      "ai_money_web_db_v5": "{\"accounts\":[{\"id\":\"acc-bcp\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Cuenta Bancaria (BCP / Interbank)\",\"type\":\"bank\",\"initial_balance\":10000,\"current_balance\":10000,\"currency\":\"PEN\",\"color\":\"#3B82F6\",\"icon\":\"account-balance\"},{\"id\":\"acc-efectivo\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Efectivo (Billetera)\",\"type\":\"cash\",\"initial_balance\":500,\"current_balance\":500,\"currency\":\"PEN\",\"color\":\"#10B981\",\"icon\":\"wallet\"}],\"categories\":[{\"id\":\"cat-1-alimentaci-n\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Alimentación\",\"type\":\"expense\",\"icon\":\"restaurant\",\"color\":\"#EF4444\",\"is_default\":1},{\"id\":\"cat-2-transporte\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Transporte\",\"type\":\"expense\",\"icon\":\"directions-car\",\"color\":\"#F59E0B\",\"is_default\":1},{\"id\":\"cat-3-vivienda-y-servicios\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Vivienda y Servicios\",\"type\":\"expense\",\"icon\":\"home\",\"color\":\"#3B82F6\",\"is_default\":1},{\"id\":\"cat-4-entretenimiento\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Entretenimiento\",\"type\":\"expense\",\"icon\":\"sports-esports\",\"color\":\"#8B5CF6\",\"is_default\":1},{\"id\":\"cat-5-salud-y-cuidado\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Salud y Cuidado\",\"type\":\"expense\",\"icon\":\"favorite\",\"color\":\"#EC4899\",\"is_default\":1},{\"id\":\"cat-6-compras-y-ropa\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Compras y Ropa\",\"type\":\"expense\",\"icon\":\"shopping-bag\",\"color\":\"#14B8A6\",\"is_default\":1},{\"id\":\"cat-7-educaci-n\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Educación\",\"type\":\"expense\",\"icon\":\"school\",\"color\":\"#6366F1\",\"is_default\":1},{\"id\":\"cat-8-viajes\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Viajes\",\"type\":\"expense\",\"icon\":\"flight\",\"color\":\"#06B6D4\",\"is_default\":1},{\"id\":\"cat-9-suscripciones\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Suscripciones\",\"type\":\"expense\",\"icon\":\"subscriptions\",\"color\":\"#64748B\",\"is_default\":1},{\"id\":\"cat-10-otros-gastos\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Otros Gastos\",\"type\":\"expense\",\"icon\":\"more-horiz\",\"color\":\"#94A3B8\",\"is_default\":1},{\"id\":\"cat-11-salario\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Salario\",\"type\":\"income\",\"icon\":\"attach-money\",\"color\":\"#10B981\",\"is_default\":1},{\"id\":\"cat-12-freelance---negocios\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Freelance / Negocios\",\"type\":\"income\",\"icon\":\"business-center\",\"color\":\"#059669\",\"is_default\":1},{\"id\":\"cat-13-inversiones-y-rendimientos\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Inversiones y Rendimientos\",\"type\":\"income\",\"icon\":\"trending-up\",\"color\":\"#34D399\",\"is_default\":1},{\"id\":\"cat-14-regalos---bonos\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Regalos / Bonos\",\"type\":\"income\",\"icon\":\"card-giftcard\",\"color\":\"#A7F3D0\",\"is_default\":1},{\"id\":\"cat-15-otros-ingresos\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"name\":\"Otros Ingresos\",\"type\":\"income\",\"icon\":\"add-circle-outline\",\"color\":\"#6EE7B7\",\"is_default\":1}],\"transactions\":[{\"id\":\"tx-sueldo-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-11-salario\",\"amount\":5000,\"type\":\"income\",\"date\":\"2026-06-01\",\"merchant\":\"Sueldo Mario\",\"notes\":\"Ingreso mensual empresa\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-win-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":130,\"type\":\"expense\",\"date\":\"2026-06-05\",\"merchant\":\"WIN\",\"notes\":\"Internet Fibra\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-chorrillos-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":65.3,\"type\":\"expense\",\"date\":\"2026-06-08\",\"merchant\":\"AGUA CHORRILLOS\",\"notes\":\"Servicio de Agua Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-surco-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":112,\"type\":\"expense\",\"date\":\"2026-06-08\",\"merchant\":\"AGUA SURCO\",\"notes\":\"Servicio de Agua Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-chorrillos-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":141.6,\"type\":\"expense\",\"date\":\"2026-06-10\",\"merchant\":\"LUZ CHORRILLOS\",\"notes\":\"Luz del Sur Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-surco-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":969.6,\"type\":\"expense\",\"date\":\"2026-06-10\",\"merchant\":\"LUZ SURCO\",\"notes\":\"Luz del Sur Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-01-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":22,\"type\":\"expense\",\"date\":\"2026-06-12\",\"merchant\":\"GAS CHORRILLOS 01\",\"notes\":\"Gas Natural Cálidda 01\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-02-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":33,\"type\":\"expense\",\"date\":\"2026-06-12\",\"merchant\":\"GAS CHORRILLOS 02\",\"notes\":\"Gas Natural Cálidda 02\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-movistar-surco-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":126.67,\"type\":\"expense\",\"date\":\"2026-06-14\",\"merchant\":\"MOVISTAR SURCO\",\"notes\":\"Telefónica / Movistar Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-saga-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-6-compras-y-ropa\",\"amount\":158,\"type\":\"expense\",\"date\":\"2026-06-18\",\"merchant\":\"SAGA\",\"notes\":\"Tarjeta Saga Falabella\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-brenda-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":29,\"type\":\"expense\",\"date\":\"2026-06-20\",\"merchant\":\"CELULAR BRENDA\",\"notes\":\"Plan móvil Brenda\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-mario-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":62,\"type\":\"expense\",\"date\":\"2026-06-20\",\"merchant\":\"CELULAR MARIO\",\"notes\":\"Plan móvil Mario\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-diana-2026-06\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":43,\"type\":\"expense\",\"date\":\"2026-06-20\",\"merchant\":\"CELULAR DIANA\",\"notes\":\"Plan móvil Diana\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-sueldo-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-11-salario\",\"amount\":5000,\"type\":\"income\",\"date\":\"2026-07-01\",\"merchant\":\"Sueldo Mario\",\"notes\":\"Ingreso mensual empresa\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-win-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":130,\"type\":\"expense\",\"date\":\"2026-07-05\",\"merchant\":\"WIN\",\"notes\":\"Internet Fibra\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-chorrillos-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":65.3,\"type\":\"expense\",\"date\":\"2026-07-08\",\"merchant\":\"AGUA CHORRILLOS\",\"notes\":\"Servicio de Agua Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-surco-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":112,\"type\":\"expense\",\"date\":\"2026-07-08\",\"merchant\":\"AGUA SURCO\",\"notes\":\"Servicio de Agua Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-chorrillos-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":141.6,\"type\":\"expense\",\"date\":\"2026-07-10\",\"merchant\":\"LUZ CHORRILLOS\",\"notes\":\"Luz del Sur Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-surco-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":969.6,\"type\":\"expense\",\"date\":\"2026-07-10\",\"merchant\":\"LUZ SURCO\",\"notes\":\"Luz del Sur Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-01-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":22,\"type\":\"expense\",\"date\":\"2026-07-12\",\"merchant\":\"GAS CHORRILLOS 01\",\"notes\":\"Gas Natural Cálidda 01\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-02-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":33,\"type\":\"expense\",\"date\":\"2026-07-12\",\"merchant\":\"GAS CHORRILLOS 02\",\"notes\":\"Gas Natural Cálidda 02\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-movistar-surco-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":126.67,\"type\":\"expense\",\"date\":\"2026-07-14\",\"merchant\":\"MOVISTAR SURCO\",\"notes\":\"Telefónica / Movistar Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-saga-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-6-compras-y-ropa\",\"amount\":158,\"type\":\"expense\",\"date\":\"2026-07-18\",\"merchant\":\"SAGA\",\"notes\":\"Tarjeta Saga Falabella\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-brenda-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":29,\"type\":\"expense\",\"date\":\"2026-07-20\",\"merchant\":\"CELULAR BRENDA\",\"notes\":\"Plan móvil Brenda\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-mario-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":62,\"type\":\"expense\",\"date\":\"2026-07-20\",\"merchant\":\"CELULAR MARIO\",\"notes\":\"Plan móvil Mario\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-diana-2026-07\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":43,\"type\":\"expense\",\"date\":\"2026-07-20\",\"merchant\":\"CELULAR DIANA\",\"notes\":\"Plan móvil Diana\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-sueldo-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-11-salario\",\"amount\":5000,\"type\":\"income\",\"date\":\"2026-08-01\",\"merchant\":\"Sueldo Mario\",\"notes\":\"Ingreso mensual empresa\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-win-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":130,\"type\":\"expense\",\"date\":\"2026-08-05\",\"merchant\":\"WIN\",\"notes\":\"Internet Fibra\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-chorrillos-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":65.3,\"type\":\"expense\",\"date\":\"2026-08-08\",\"merchant\":\"AGUA CHORRILLOS\",\"notes\":\"Servicio de Agua Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-surco-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":112,\"type\":\"expense\",\"date\":\"2026-08-08\",\"merchant\":\"AGUA SURCO\",\"notes\":\"Servicio de Agua Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-chorrillos-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":141.6,\"type\":\"expense\",\"date\":\"2026-08-10\",\"merchant\":\"LUZ CHORRILLOS\",\"notes\":\"Luz del Sur Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-surco-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":969.6,\"type\":\"expense\",\"date\":\"2026-08-10\",\"merchant\":\"LUZ SURCO\",\"notes\":\"Luz del Sur Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-01-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":22,\"type\":\"expense\",\"date\":\"2026-08-12\",\"merchant\":\"GAS CHORRILLOS 01\",\"notes\":\"Gas Natural Cálidda 01\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-02-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":33,\"type\":\"expense\",\"date\":\"2026-08-12\",\"merchant\":\"GAS CHORRILLOS 02\",\"notes\":\"Gas Natural Cálidda 02\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-movistar-surco-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":126.67,\"type\":\"expense\",\"date\":\"2026-08-14\",\"merchant\":\"MOVISTAR SURCO\",\"notes\":\"Telefónica / Movistar Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-saga-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-6-compras-y-ropa\",\"amount\":158,\"type\":\"expense\",\"date\":\"2026-08-18\",\"merchant\":\"SAGA\",\"notes\":\"Tarjeta Saga Falabella\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-brenda-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":29,\"type\":\"expense\",\"date\":\"2026-08-20\",\"merchant\":\"CELULAR BRENDA\",\"notes\":\"Plan móvil Brenda\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-mario-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":62,\"type\":\"expense\",\"date\":\"2026-08-20\",\"merchant\":\"CELULAR MARIO\",\"notes\":\"Plan móvil Mario\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-diana-2026-08\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":43,\"type\":\"expense\",\"date\":\"2026-08-20\",\"merchant\":\"CELULAR DIANA\",\"notes\":\"Plan móvil Diana\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-sueldo-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-11-salario\",\"amount\":5000,\"type\":\"income\",\"date\":\"2026-09-01\",\"merchant\":\"Sueldo Mario\",\"notes\":\"Ingreso mensual empresa\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-win-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":130,\"type\":\"expense\",\"date\":\"2026-09-05\",\"merchant\":\"WIN\",\"notes\":\"Internet Fibra\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-chorrillos-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":65.3,\"type\":\"expense\",\"date\":\"2026-09-08\",\"merchant\":\"AGUA CHORRILLOS\",\"notes\":\"Servicio de Agua Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-agua-surco-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":112,\"type\":\"expense\",\"date\":\"2026-09-08\",\"merchant\":\"AGUA SURCO\",\"notes\":\"Servicio de Agua Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-chorrillos-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":141.6,\"type\":\"expense\",\"date\":\"2026-09-10\",\"merchant\":\"LUZ CHORRILLOS\",\"notes\":\"Luz del Sur Chorrillos\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-luz-surco-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":969.6,\"type\":\"expense\",\"date\":\"2026-09-10\",\"merchant\":\"LUZ SURCO\",\"notes\":\"Luz del Sur Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-01-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":22,\"type\":\"expense\",\"date\":\"2026-09-12\",\"merchant\":\"GAS CHORRILLOS 01\",\"notes\":\"Gas Natural Cálidda 01\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-gas-chorrillos-02-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":33,\"type\":\"expense\",\"date\":\"2026-09-12\",\"merchant\":\"GAS CHORRILLOS 02\",\"notes\":\"Gas Natural Cálidda 02\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-movistar-surco-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":126.67,\"type\":\"expense\",\"date\":\"2026-09-14\",\"merchant\":\"MOVISTAR SURCO\",\"notes\":\"Telefónica / Movistar Surco\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-saga-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-6-compras-y-ropa\",\"amount\":158,\"type\":\"expense\",\"date\":\"2026-09-18\",\"merchant\":\"SAGA\",\"notes\":\"Tarjeta Saga Falabella\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-brenda-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":29,\"type\":\"expense\",\"date\":\"2026-09-20\",\"merchant\":\"CELULAR BRENDA\",\"notes\":\"Plan móvil Brenda\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-mario-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":62,\"type\":\"expense\",\"date\":\"2026-09-20\",\"merchant\":\"CELULAR MARIO\",\"notes\":\"Plan móvil Mario\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null},{\"id\":\"tx-celular-diana-2026-09\",\"created_at\":1770000000000,\"updated_at\":1770000000000,\"deleted_at\":null,\"account_id\":\"acc-bcp\",\"category_id\":\"cat-3-vivienda-y-servicios\",\"amount\":43,\"type\":\"expense\",\"date\":\"2026-09-20\",\"merchant\":\"CELULAR DIANA\",\"notes\":\"Plan móvil Diana\",\"source\":\"manual\",\"currency\":\"PEN\",\"destination_account_id\":null,\"raw_input\":null,\"sync_status\":\"synced\",\"adjustment_previous\":null,\"adjustment_new\":null}],\"budgets\":[],\"settings\":{\"profileName\":\"Mario\",\"hideAmounts\":\"false\"}}"
+    }
+  },
+  "hasMarioData": true,
+  "bodyTextSnippet": "\n\n\n\n\n\n\n\nAI Money\nInicio\nMovimientos\nCuentas\nAnálisis\nMario IA\nAjustes\n\nM\nMario\n\nHola, Mario\nAquí tienes el resumen de tus finanzas.\n\nSetiembre de 2026\n\nJun\nJul\nAgo\nSet\nPATRIMONIO TOTAL\n\n\nS/ 22,931.32\n2 cuentas · Actualizado hoy\nINGRESOS\n\nS/ 5,000.00\nEntradas registradas\nGASTOS DEL MES\n\nS/ 1,892.17\n2 categorías activas\nBALANCE DEL MES\n+62%\nS/ 3,107.83\nSuperávit acumulado\nTodos los gastos del mes\n12 gastos registrados en este período\n\nFiltros\n\nNuevo gasto\nDESCRIPCIÓN\nCATEGORÍA\nCUENTA\nFECHA\n\nMONTO\nCELULAR BRENDA\nPlan móvil Brenda\n\nVivienda y Servicios\nCuenta Bancaria (BCP / Interbank)\n20 sep. 2026\n-S/ 29.00\n\nCELULAR MARIO\nPlan móvil Mario\n\nVivienda y Servicios\nCuenta Bancaria (BCP / Interbank)\n20 sep. 2026\n-S/ 62.00\n\nCELULAR DIANA\nPlan móvil Diana\n\nVivienda y Servicios\nCuenta Bancaria (BCP / Interbank)\n20 sep. 2026\n-S/ 43.00\n\nSAGA\nTarjeta Saga Falabella\n\nCompras y Ropa\nCuenta Bancaria (BCP / Interbank)\n18 sep. 2026\n-S/ 158.00\n\nMOVISTAR SURCO\nTelefónica / Movista"
+}

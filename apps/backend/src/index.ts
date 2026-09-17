@@ -11,8 +11,37 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Disable x-powered-by to prevent tech stack fingerprinting
+app.disable('x-powered-by');
+
+// Security headers
+app.use((_req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-XSS-Protection', '1; mode=block');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  next();
+});
+
 // Middlewares
-app.use(cors());
+const allowedOrigins = [
+  'https://backend-gold-omega-57.vercel.app',
+  'http://localhost:8081',
+  'http://localhost:3000',
+  'http://localhost:3001',
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+      callback(null, true);
+    } else {
+      callback(null, false);
+    }
+  },
+  credentials: true,
+}));
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true })); // Para webhooks de Twilio
 

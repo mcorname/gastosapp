@@ -42,6 +42,9 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
 }) => {
   const { width } = useWindowDimensions();
   const isDesktop = width >= 1024;
+  const isWide = width >= 1200;
+  const isMobile = width < 768;
+  const isSmallMobile = width < 380;
 
   const [localSearch, setLocalSearch] = useState(searchQuery);
 
@@ -65,18 +68,27 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
   };
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        isMobile
+          ? styles.containerMobile
+          : isWide
+          ? styles.containerWide
+          : styles.containerTablet,
+      ]}
+    >
       {/* Brand & Horizontal Nav */}
-      <View style={styles.leftRow}>
-        <View style={styles.brandRow}>
+      <View style={[styles.leftRow, isMobile && styles.leftRowMobile]}>
+        <View style={[styles.brandRow, isSmallMobile && { gap: 6 }]}>
           <View style={styles.logoBadge}>
             <MaterialIcons name="eco" size={18} color="#FFFFFF" />
           </View>
-          <Text style={styles.brandTitle}>AI Money</Text>
+          {!isSmallMobile && <Text style={styles.brandTitle}>AI Money</Text>}
         </View>
 
         {/* Desktop Nav Pills */}
-        {isDesktop && (
+        {isWide && (
           <View style={styles.navPillsRow}>
             {NAV_ITEMS.map((item) => {
               const isSelected = activeTab === item.id;
@@ -107,27 +119,46 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
       </View>
 
       {/* Right Row: Search, Date & Profile */}
-      <View style={styles.rightRow}>
+      <View style={[styles.rightRow, isMobile && styles.rightRowMobile]}>
         {/* Search Input */}
-        <View style={styles.searchContainer}>
-          <Feather name="search" size={14} color={tokens.colors.textTertiary} style={{ marginRight: 8 }} />
+        <View
+          style={[
+            styles.searchContainer,
+            isMobile
+              ? isSmallMobile
+                ? styles.searchSmallMobile
+                : styles.searchMobile
+              : isWide
+              ? styles.searchWide
+              : styles.searchTablet,
+          ]}
+        >
+          <Feather
+            name="search"
+            size={13}
+            color={tokens.colors.textTertiary}
+            style={{ marginRight: 6 }}
+          />
           <TextInput
             style={styles.searchInput}
-            placeholder="Buscar movimientos, categorías, cuentas..."
+            placeholder={isMobile ? 'Buscar…' : 'Buscar movimientos, cuentas…'}
             placeholderTextColor={tokens.colors.textTertiary}
             value={localSearch}
             onChangeText={setLocalSearch}
           />
           {localSearch.length > 0 && (
-            <TouchableOpacity onPress={() => setLocalSearch('')} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
-              <Feather name="x" size={13} color={tokens.colors.textTertiary} />
+            <TouchableOpacity
+              onPress={() => setLocalSearch('')}
+              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+            >
+              <Feather name="x" size={12} color={tokens.colors.textTertiary} />
             </TouchableOpacity>
           )}
         </View>
 
         {/* Profile Avatar */}
         <TouchableOpacity
-          style={styles.profileBtn}
+          style={[styles.profileBtn, isMobile && styles.profileBtnMobile]}
           onPress={onOpenProfile}
           activeOpacity={0.7}
           accessibilityRole="button"
@@ -136,8 +167,8 @@ export const TopNavBar: React.FC<TopNavBarProps> = ({
           <View style={styles.avatarCircle}>
             <Text style={styles.avatarLetter}>{profileName.slice(0, 1).toUpperCase()}</Text>
           </View>
-          {isDesktop && <Text style={styles.profileName}>{profileName}</Text>}
-          <Feather name="chevron-down" size={12} color={tokens.colors.textTertiary} />
+          {isWide && <Text style={styles.profileName}>{profileName}</Text>}
+          {isDesktop && <Feather name="chevron-down" size={12} color={tokens.colors.textTertiary} />}
         </TouchableOpacity>
       </View>
     </View>
@@ -149,18 +180,32 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 12,
-    paddingHorizontal: 28,
+    paddingVertical: 10,
     backgroundColor: tokens.colors.surface,
     borderBottomWidth: 1,
     borderBottomColor: tokens.colors.borderSubtle,
-    gap: 16,
     zIndex: 50,
+  },
+  containerMobile: {
+    paddingHorizontal: 12,
+    gap: 8,
+  },
+  containerTablet: {
+    paddingHorizontal: 16,
+    gap: 12,
+  },
+  containerWide: {
+    paddingHorizontal: 28,
+    gap: 16,
   },
   leftRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 28,
+    gap: 24,
+    flexShrink: 0,
+  },
+  leftRowMobile: {
+    gap: 8,
   },
   brandRow: {
     flexDirection: 'row',
@@ -176,7 +221,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   brandTitle: {
-    fontSize: 17,
+    fontSize: 16,
     fontWeight: '700',
     color: tokens.colors.textPrimary,
     letterSpacing: -0.3,
@@ -190,7 +235,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 6,
-    paddingHorizontal: 14,
+    paddingHorizontal: 12,
     borderRadius: tokens.radii.pill,
   },
   pillSelected: {
@@ -220,7 +265,12 @@ const styles = StyleSheet.create({
   rightRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
+    gap: 12,
+    flexShrink: 1,
+    justifyContent: 'flex-end',
+  },
+  rightRowMobile: {
+    gap: 8,
   },
   searchContainer: {
     flexDirection: 'row',
@@ -229,12 +279,30 @@ const styles = StyleSheet.create({
     borderRadius: tokens.radii.btn,
     borderWidth: 1,
     borderColor: tokens.colors.borderSubtle,
-    paddingHorizontal: 12,
-    height: 36,
-    width: 290,
+    height: 34,
+    paddingHorizontal: 8,
+    overflow: 'hidden',
+  },
+  searchSmallMobile: {
+    width: 75,
+    minWidth: 0,
+  },
+  searchMobile: {
+    width: 105,
+    minWidth: 0,
+  },
+  searchTablet: {
+    width: 175,
+    minWidth: 0,
+  },
+  searchWide: {
+    width: 260,
+    minWidth: 0,
   },
   searchInput: {
     flex: 1,
+    minWidth: 0,
+    width: '100%',
     color: tokens.colors.textPrimary,
     fontSize: 13,
     padding: 0,
@@ -242,10 +310,14 @@ const styles = StyleSheet.create({
   profileBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 6,
     paddingVertical: 4,
-    paddingHorizontal: 6,
+    paddingHorizontal: 4,
     borderRadius: tokens.radii.btn,
+  },
+  profileBtnMobile: {
+    paddingHorizontal: 0,
+    gap: 0,
   },
   avatarCircle: {
     width: 28,

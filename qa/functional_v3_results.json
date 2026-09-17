@@ -1,0 +1,192 @@
+{
+  "matrix": [
+    {
+      "module": "Dashboard",
+      "screen": "Inicio",
+      "feature": "Carga inicial de datos",
+      "action": "Cargar app en navegador limpio",
+      "expected": "Cuentas y gastos cargados por defecto",
+      "real": "Data de Mario cargada con saldos calculados",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "screen": "Movimientos",
+      "feature": "Cambio de pestaña",
+      "action": "Clic en tab Movimientos",
+      "expected": "Vista Movimientos renderizada",
+      "real": "Vista visible y reactiva",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "screen": "Cuentas",
+      "feature": "Cambio de pestaña",
+      "action": "Clic en tab Cuentas",
+      "expected": "Vista Cuentas renderizada",
+      "real": "Vista visible y reactiva",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "screen": "Análisis",
+      "feature": "Cambio de pestaña",
+      "action": "Clic en tab Análisis",
+      "expected": "Vista Análisis renderizada",
+      "real": "Vista visible y reactiva",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "screen": "Ajustes",
+      "feature": "Cambio de pestaña",
+      "action": "Clic en tab Ajustes",
+      "expected": "Vista Ajustes renderizada",
+      "real": "Vista visible y reactiva",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Navegación",
+      "screen": "Inicio",
+      "feature": "Cambio de pestaña",
+      "action": "Clic en tab Inicio",
+      "expected": "Vista Inicio renderizada",
+      "real": "Vista visible y reactiva",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Dashboard",
+      "screen": "Inicio",
+      "feature": "Filtro por mes",
+      "action": "Clic en Jun",
+      "expected": "Muestra datos de Junio 2026",
+      "real": "Período cambiado a Junio",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Dashboard",
+      "screen": "Inicio",
+      "feature": "Filtro por mes",
+      "action": "Clic en Set",
+      "expected": "Muestra datos de Setiembre 2026",
+      "real": "Período cambiado a Setiembre",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Búsqueda",
+      "screen": "Inicio",
+      "feature": "Buscador con debounce",
+      "action": "Escribir WIN en buscador",
+      "expected": "Filtra y muestra solo movimiento WIN",
+      "real": "Filtro aplicado correctamente",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Tabla",
+      "screen": "Inicio",
+      "feature": "Ordenamiento por columna",
+      "action": "Clic en encabezado MONTO",
+      "expected": "Reordena transacciones por valor",
+      "real": "Ordenamiento ejecutado sin errores",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Transacciones",
+      "screen": "Modal Nuevo Gasto",
+      "feature": "Validación de campos obligatorios",
+      "action": "Clic Guardar con campos vacíos",
+      "expected": "Bloquea submit y muestra error",
+      "real": "Error de validación mostrado",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "bug": ""
+    },
+    {
+      "module": "Transacciones",
+      "screen": "Modal Nuevo Gasto",
+      "feature": "Creación de gasto (CREATE)",
+      "action": "Llenar datos válidos y Guardar",
+      "expected": "Gasto creado y visible en tabla",
+      "real": "Gasto registrado con éxito y visible",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "bug": ""
+    },
+    {
+      "module": "Patrimonio",
+      "screen": "Modal Patrimonio",
+      "feature": "Detalle de patrimonio",
+      "action": "Clic en tarjeta Patrimonio Total",
+      "expected": "Abre modal con detalle de cuentas",
+      "real": "Modal abierto con saldos",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Patrimonio",
+      "screen": "Modal Patrimonio",
+      "feature": "Enlace directo a Cuentas",
+      "action": "Clic en Gestionar cuentas",
+      "expected": "Navega a la pantalla Cuentas",
+      "real": "Navegación exitosa",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Cuentas",
+      "screen": "AccountsView",
+      "feature": "Modal Ajuste de Saldo",
+      "action": "Clic en Ajustar saldo",
+      "expected": "Abre modal de cuadre con cálculo de diferencia",
+      "real": "Modal de ajuste funcional",
+      "status": "PASS",
+      "severity": "HIGH",
+      "bug": ""
+    },
+    {
+      "module": "Seguridad / UX",
+      "screen": "Ajustes",
+      "feature": "Modo privacidad (Ojo)",
+      "action": "Clic en Ocultar importes",
+      "expected": "Reemplaza números con •••••••• transversalmente",
+      "real": "Montos enmascarados correctamente",
+      "status": "PASS",
+      "severity": "LOW",
+      "bug": ""
+    },
+    {
+      "module": "Persistencia",
+      "screen": "General",
+      "feature": "Recarga de navegador (F5)",
+      "action": "Recargar página tras creación",
+      "expected": "Datos creados permanecen intactos en Local-first",
+      "real": "Persistencia local confirmada tras reload",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "bug": ""
+    }
+  ],
+  "consoleLogs": []
+}

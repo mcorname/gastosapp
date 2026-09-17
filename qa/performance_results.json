@@ -1,0 +1,116 @@
+{
+  "targetUrl": "https://backend-gold-omega-57.vercel.app/",
+  "timestamp": "2026-09-17T22:24:57.764Z",
+  "runsCount": 3,
+  "averages": {
+    "ttfb": 84,
+    "firstPaint": 627,
+    "fcp": 627,
+    "domContentLoaded": 554,
+    "loadComplete": 555,
+    "domNodes": 466,
+    "jsTransferKB": "300.8",
+    "totalTransferKB": "499.6"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "durationMs": 1268,
+      "timing": {
+        "dnsTime": 102,
+        "tcpTime": 172,
+        "ttfb": 85,
+        "downloadTime": 11,
+        "domInteractive": 399,
+        "domContentLoaded": 634,
+        "loadComplete": 634,
+        "firstPaint": 704,
+        "firstContentfulPaint": 704
+      },
+      "dom": {
+        "nodes": 466,
+        "maxDepth": 20
+      },
+      "memory": {
+        "jsHeapSizeLimit": 3760000000,
+        "totalJSHeapSize": 13400000,
+        "usedJSHeapSize": 10000000
+      },
+      "network": {
+        "totalRequests": 4,
+        "totalTransferBytes": 511574,
+        "jsTransferBytes": 308053,
+        "cssTransferBytes": 203521,
+        "imgTransferBytes": 0,
+        "fontTransferBytes": 0
+      },
+      "resourcesCount": 3
+    },
+    {
+      "run": 2,
+      "durationMs": 1155,
+      "timing": {
+        "dnsTime": 1,
+        "tcpTime": 173,
+        "ttfb": 83,
+        "downloadTime": 5,
+        "domInteractive": 267,
+        "domContentLoaded": 518,
+        "loadComplete": 519,
+        "firstPaint": 592,
+        "firstContentfulPaint": 592
+      },
+      "dom": {
+        "nodes": 466,
+        "maxDepth": 20
+      },
+      "memory": {
+        "jsHeapSizeLimit": 3760000000,
+        "totalJSHeapSize": 14300000,
+        "usedJSHeapSize": 10000000
+      },
+      "network": {
+        "totalRequests": 4,
+        "totalTransferBytes": 511574,
+        "jsTransferBytes": 308053,
+        "cssTransferBytes": 203521,
+        "imgTransferBytes": 0,
+        "fontTransferBytes": 0
+      },
+      "resourcesCount": 3
+    },
+    {
+      "run": 3,
+      "durationMs": 1208,
+      "timing": {
+        "dnsTime": 0,
+        "tcpTime": 174,
+        "ttfb": 84,
+        "downloadTime": 8,
+        "domInteractive": 274,
+        "domContentLoaded": 510,
+        "loadComplete": 511,
+        "firstPaint": 584,
+        "firstContentfulPaint": 584
+      },
+      "dom": {
+        "nodes": 466,
+        "maxDepth": 20
+      },
+      "memory": {
+        "jsHeapSizeLimit": 3760000000,
+        "totalJSHeapSize": 14300000,
+        "usedJSHeapSize": 10000000
+      },
+      "network": {
+        "totalRequests": 4,
+        "totalTransferBytes": 511574,
+        "jsTransferBytes": 308053,
+        "cssTransferBytes": 203521,
+        "imgTransferBytes": 0,
+        "fontTransferBytes": 0
+      },
+      "resourcesCount": 3
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "backendApi": [
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "ok": true,
+      "status": 200,
+      "durationMs": 36,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "83",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "etag": "W/\"53-dp72ayk8RF/oLeI6II8YlqNg66U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "data": {
+        "status": "ok",
+        "service": "ai-money-backend",
+        "timestamp": "2026-09-17T22:25:00.268Z"
+      }
+    },
+    {
+      "endpoint": "/api/ai/categorize (valid)",
+      "method": "POST",
+      "ok": false,
+      "status": 404,
+      "durationMs": 17,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "157",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/categorize</pre>\n</body>\n</html>\n"
+    },
+    {
+      "endpoint": "/api/ai/categorize (empty)",
+      "method": "POST",
+      "ok": false,
+      "status": 404,
+      "durationMs": 6,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "157",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/categorize</pre>\n</body>\n</html>\n"
+    },
+    {
+      "endpoint": "/api/ai/categorize (XSS payload)",
+      "method": "POST",
+      "ok": false,
+      "status": 404,
+      "durationMs": 15,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "157",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/categorize</pre>\n</body>\n</html>\n"
+    },
+    {
+      "endpoint": "/api/ai/chat (valid)",
+      "method": "POST",
+      "ok": false,
+      "status": 404,
+      "durationMs": 9,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "151",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/chat</pre>\n</body>\n</html>\n"
+    },
+    {
+      "endpoint": "/api/ai/chat (prompt injection)",
+      "method": "POST",
+      "ok": false,
+      "status": 404,
+      "durationMs": 6,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "151",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "data": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/chat</pre>\n</body>\n</html>\n"
+    },
+    {
+      "endpoint": "/api/whatsapp/status",
+      "method": "GET",
+      "ok": false,
+      "status": 503,
+      "durationMs": 16,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "131",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "etag": "W/\"83-ODAfVOqh2lRWfZftYivvvARne/Y\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "data": {
+        "available": false,
+        "error": "WhatsApp no está disponible. La vinculación y la recepción de transacciones están deshabilitadas."
+      }
+    },
+    {
+      "endpoint": "/api/sync/status",
+      "method": "GET",
+      "ok": false,
+      "status": 501,
+      "durationMs": 15,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "120",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 17 Sep 2026 22:25:00 GMT",
+        "etag": "W/\"78-w7YtpGGUZBMcz6yhrgh7u74SMEA\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "data": {
+        "available": false,
+        "error": "La sincronización remota no está implementada. Los datos permanecen en este dispositivo."
+      }
+    }
+  ],
+  "securityHeaders": {
+    "frontend": {
+      "url": "https://backend-gold-omega-57.vercel.app/",
+      "status": 200,
+      "presentHeaders": {
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload"
+      },
+      "missingHeaders": [
+        "content-security-policy",
+        "x-content-type-options",
+        "x-frame-options",
+        "x-xss-protection",
+        "referrer-policy",
+        "permissions-policy"
+      ]
+    },
+    "backend": {
+      "url": "http://localhost:3001",
+      "status": 200,
+      "presentHeaders": {},
+      "missingHeaders": [
+        "content-security-policy",
+        "strict-transport-security",
+        "x-content-type-options",
+        "x-frame-options",
+        "x-xss-protection",
+        "referrer-policy",
+        "permissions-policy"
+      ]
+    }
+  },
+  "corsAudit": [
+    {
+      "test": "CORS Preflight from unauthorized origin",
+      "originSent": "https://evil-attacker-site.com",
+      "allowedOrigin": "*",
+      "status": 204
+    }
+  ],
+  "bundleSecretScan": [
+    {
+      "bundleUrl": "https://backend-gold-omega-57.vercel.app/_expo/static/js/web/index-c1d7d6d9cd5f1fc794c1c7bb37883462.js",
+      "sizeBytes": 1063962,
+      "leaksFound": []
+    }
+  ],
+  "xssSanitization": []
+}

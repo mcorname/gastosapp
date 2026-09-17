@@ -35,46 +35,54 @@ export const MetricsRow: React.FC<MetricsRowProps> = ({ onOpenNetWorth, onOpenAc
 
   return (
     <View style={[styles.grid, isDesktop ? styles.gridDesktop : isTablet ? styles.gridTablet : styles.gridMobile]}>
-      {/* 1. PATRIMONIO TOTAL (Card blanca grande con clickeable para detalle) */}
-      <TouchableOpacity
-        style={[styles.card, styles.cardPatrimonio]}
-        onPress={onOpenNetWorth}
-        activeOpacity={0.8}
-        accessibilityRole="button"
-        accessibilityLabel="Abrir detalle del patrimonio"
-      >
+      {/* 1. PATRIMONIO TOTAL (Card accesible sin controles anidados) */}
+      <View style={[styles.card, styles.cardPatrimonio]}>
         <View style={styles.cardHeaderRow}>
-          <Text style={styles.cardLabel}>PATRIMONIO TOTAL</Text>
-          <View style={styles.actionsRow}>
-            <TouchableOpacity
-              onPress={toggleAmounts}
-              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              accessibilityRole="button"
-              accessibilityLabel={showAmounts ? 'Ocultar importes' : 'Mostrar importes'}
-            >
-              <Feather name={showAmounts ? 'eye' : 'eye-off'} size={14} color={tokens.colors.textTertiary} />
-            </TouchableOpacity>
-            <Feather name="chevron-right" size={14} color={tokens.colors.textTertiary} />
+          <TouchableOpacity
+            style={styles.labelBtn}
+            onPress={onOpenNetWorth}
+            activeOpacity={0.7}
+            accessibilityRole="button"
+            accessibilityLabel="Abrir detalle del patrimonio"
+          >
+            <Text style={styles.cardLabel}>PATRIMONIO TOTAL</Text>
+            <Feather name="chevron-right" size={13} color={tokens.colors.textSecondary} style={{ marginLeft: 4 }} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={toggleAmounts}
+            hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+            accessibilityRole="button"
+            accessibilityLabel={showAmounts ? 'Ocultar importes' : 'Mostrar importes'}
+            style={styles.eyeBtn}
+          >
+            <Feather name={showAmounts ? 'eye' : 'eye-off'} size={15} color={tokens.colors.textSecondary} />
+          </TouchableOpacity>
+        </View>
+
+        <TouchableOpacity
+          onPress={onOpenNetWorth}
+          activeOpacity={0.8}
+          accessibilityRole="button"
+          accessibilityLabel={`Patrimonio total: ${displayMoney(totalBalance, currency)}. Ver desglose.`}
+        >
+          <Text style={styles.amountLarge}>{displayMoney(totalBalance, currency)}</Text>
+
+          <View style={styles.cardFooterRow}>
+            <Text style={styles.footerMutedText}>{accountCountText} · Actualizado hoy</Text>
           </View>
-        </View>
+        </TouchableOpacity>
+      </View>
 
-        <Text style={styles.amountLarge}>{displayMoney(totalBalance, currency)}</Text>
-
-        <View style={styles.cardFooterRow}>
-          <Text style={styles.footerMutedText}>{accountCountText} · Actualizado hoy</Text>
-        </View>
-      </TouchableOpacity>
-
-      {/* 2. INGRESOS (Card blanca/gris suave) */}
+      {/* 2. INGRESOS (Card blanca/gris suave con contraste AA) */}
       <View style={[styles.card, styles.cardSoft]}>
         <View style={styles.cardHeaderRow}>
           <Text style={styles.cardLabel}>INGRESOS</Text>
           <View style={styles.iconCircleBrand}>
-            <Feather name="arrow-down-left" size={13} color={tokens.colors.brand} />
+            <Feather name="arrow-down-left" size={13} color={tokens.colors.brandText} />
           </View>
         </View>
 
-        <Text style={[styles.amountMedium, { color: tokens.colors.brand }]}>
+        <Text style={[styles.amountMedium, { color: tokens.colors.brandText }]}>
           {displayMoney(stats.totalIncome, currency)}
         </Text>
 
@@ -83,40 +91,40 @@ export const MetricsRow: React.FC<MetricsRowProps> = ({ onOpenNetWorth, onOpenAc
         </View>
       </View>
 
-      {/* 3. GASTOS (Tarjeta destacada en CORAL #FF643D) */}
+      {/* 3. GASTOS (Tarjeta destacada con contraste accesible) */}
       <View style={[styles.card, styles.cardExpenseStandout]}>
         <View style={styles.cardHeaderRow}>
-          <Text style={[styles.cardLabel, { color: tokens.colors.expense }]}>GASTOS DEL MES</Text>
+          <Text style={[styles.cardLabel, { color: tokens.colors.expenseText }]}>GASTOS DEL MES</Text>
           <View style={styles.iconCircleExpense}>
             <Feather name="arrow-up-right" size={13} color="#FFFFFF" />
           </View>
         </View>
 
-        <Text style={[styles.amountMedium, { color: tokens.colors.expense }]}>
+        <Text style={[styles.amountMedium, { color: tokens.colors.expenseText }]}>
           {displayMoney(stats.totalExpense, currency)}
         </Text>
 
         <View style={styles.cardFooterRow}>
-          <Text style={[styles.footerMutedText, { color: '#E0532E' }]}>
+          <Text style={[styles.footerMutedText, { color: tokens.colors.expenseText, fontWeight: '500' }]}>
             {stats.topCategories.length} categorías activas
           </Text>
         </View>
       </View>
 
-      {/* 4. BALANCE (Card blanca/gris) */}
+      {/* 4. BALANCE (Card blanca/gris con badges legibles) */}
       <View style={[styles.card, styles.cardSoft]}>
         <View style={styles.cardHeaderRow}>
           <Text style={styles.cardLabel}>BALANCE DEL MES</Text>
           <View
             style={[
               styles.badgePill,
-              { backgroundColor: isNetPositive ? tokens.colors.brandLight : tokens.colors.expenseLight },
+              { backgroundColor: isNetPositive ? '#DDF3EA' : '#FEECE7' },
             ]}
           >
             <Text
               style={[
                 styles.badgePillText,
-                { color: isNetPositive ? tokens.colors.brand : tokens.colors.expense },
+                { color: isNetPositive ? '#05613F' : '#A8280B' },
               ]}
             >
               {isNetPositive ? `+${savingsRate}%` : `${savingsRate}%`}
@@ -124,12 +132,7 @@ export const MetricsRow: React.FC<MetricsRowProps> = ({ onOpenNetWorth, onOpenAc
           </View>
         </View>
 
-        <Text
-          style={[
-            styles.amountMedium,
-            { color: isNetPositive ? tokens.colors.textPrimary : tokens.colors.textPrimary },
-          ]}
-        >
+        <Text style={[styles.amountMedium, { color: tokens.colors.textPrimary }]}>
           {displayMoney(netBalance, currency)}
         </Text>
 
@@ -196,10 +199,17 @@ const styles = StyleSheet.create({
     letterSpacing: 0.6,
     textTransform: 'uppercase',
   },
-  actionsRow: {
+  labelBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    paddingVertical: 2,
+  },
+  eyeBtn: {
+    padding: 6,
+    minWidth: 28,
+    minHeight: 28,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   amountLarge: {
     fontSize: 28,
