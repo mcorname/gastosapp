@@ -1,5 +1,5 @@
 import * as SQLite from 'expo-sqlite';
-import type { Ledger } from '../../../../packages/shared/src/finance';
+import type { Ledger } from '@ai-money/shared';
 import { fromRows, toRows, initialLedger } from './serialization';
 import { migrateDatabase } from './migrations';
 let dbInstance: SQLite.SQLiteDatabase | null = null;

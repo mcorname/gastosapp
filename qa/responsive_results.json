@@ -56,7 +56,7 @@
     ],
     "screenshot": "vp_iphone_se_1st_320x568.png",
     "consoleErrors": [],
-    "durationMs": 2232,
+    "durationMs": 3172,
     "status": "PASS"
   },
   {
@@ -116,7 +116,7 @@
     ],
     "screenshot": "vp_android_common_360x800.png",
     "consoleErrors": [],
-    "durationMs": 2274,
+    "durationMs": 2844,
     "status": "PASS"
   },
   {
@@ -176,7 +176,7 @@
     ],
     "screenshot": "vp_iphone_se_2nd_375x667.png",
     "consoleErrors": [],
-    "durationMs": 2268,
+    "durationMs": 3041,
     "status": "PASS"
   },
   {
@@ -236,7 +236,7 @@
     ],
     "screenshot": "vp_iphone_12_14_390x844.png",
     "consoleErrors": [],
-    "durationMs": 2257,
+    "durationMs": 2752,
     "status": "PASS"
   },
   {
@@ -296,7 +296,7 @@
     ],
     "screenshot": "vp_pixel_7_412x915.png",
     "consoleErrors": [],
-    "durationMs": 2269,
+    "durationMs": 2865,
     "status": "PASS"
   },
   {
@@ -356,7 +356,7 @@
     ],
     "screenshot": "vp_iphone_15_pro_max_430x932.png",
     "consoleErrors": [],
-    "durationMs": 2245,
+    "durationMs": 2780,
     "status": "PASS"
   },
   {
@@ -416,7 +416,7 @@
     ],
     "screenshot": "vp_ipad_mini_portrait_768x1024.png",
     "consoleErrors": [],
-    "durationMs": 2253,
+    "durationMs": 3034,
     "status": "PASS"
   },
   {
@@ -476,7 +476,7 @@
     ],
     "screenshot": "vp_ipad_air_portrait_820x1180.png",
     "consoleErrors": [],
-    "durationMs": 2250,
+    "durationMs": 2753,
     "status": "PASS"
   },
   {
@@ -500,7 +500,7 @@
     ],
     "screenshot": "vp_ipad_landscape_1024x768.png",
     "consoleErrors": [],
-    "durationMs": 2247,
+    "durationMs": 2887,
     "status": "PASS"
   },
   {
@@ -560,7 +560,7 @@
     ],
     "screenshot": "vp_laptop_hd_1280x720.png",
     "consoleErrors": [],
-    "durationMs": 2254,
+    "durationMs": 2744,
     "status": "PASS"
   },
   {
@@ -620,7 +620,7 @@
     ],
     "screenshot": "vp_laptop_common_1366x768.png",
     "consoleErrors": [],
-    "durationMs": 2272,
+    "durationMs": 2793,
     "status": "PASS"
   },
   {
@@ -680,7 +680,7 @@
     ],
     "screenshot": "vp_macbook_air_1440x900.png",
     "consoleErrors": [],
-    "durationMs": 2262,
+    "durationMs": 2746,
     "status": "PASS"
   },
   {
@@ -740,7 +740,7 @@
     ],
     "screenshot": "vp_desktop_fhd_1920x1080.png",
     "consoleErrors": [],
-    "durationMs": 2278,
+    "durationMs": 2836,
     "status": "PASS"
   }
 ]

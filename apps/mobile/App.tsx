@@ -30,6 +30,7 @@ import { TransactionItem } from './src/components/TransactionItem';
 import { NewTransactionModal } from './src/components/NewTransactionModal';
 import { QuickAIModal } from './src/components/QuickAIModal';
 import { MarioChatModal } from './src/components/MarioChatModal';
+import { CategoryIcon } from './src/components/CategoryIcon';
 import { Button, ui } from './src/components/FormUI';
 import { tokens } from './src/theme/tokens';
 import { injectGlobalStyles } from './src/theme/globalStyles';
@@ -198,7 +199,7 @@ function MainApp() {
         )}
 
         {/* Main Canvas */}
-        <View style={styles.mainCanvas} accessibilityRole="main">
+        <View style={styles.mainCanvas} role="main" aria-label="Contenido principal">
           {/* Top Navigation Bar */}
           <TopNavBar
             activeTab={activeTab}
@@ -379,6 +380,7 @@ function MainApp() {
                   {stats.topCategories.length ? (
                     stats.topCategories.map((cat) => (
                       <View key={cat.id || cat.name} style={styles.analysisRow}>
+                        <CategoryIcon categoryName={cat.name} size={15} boxSize={30} borderRadius={7} />
                         <View style={styles.analysisText}>
                           <Text style={styles.sectionTitle}>{cat.name}</Text>
                           <Text style={styles.tabSubtitle}>
@@ -922,7 +924,7 @@ const styles = StyleSheet.create({
   analysisAmount: {
     color: tokens.colors.textPrimary,
     fontSize: 14,
-    fontWeight: '650' as any,
+    fontWeight: '600',
     fontVariant: ['tabular-nums'],
   },
   sectionHeaderRowNoPad: {
@@ -1015,7 +1017,7 @@ const styles = StyleSheet.create({
   },
   tabLabelActive: {
     color: tokens.colors.brand,
-    fontWeight: '650' as any,
+    fontWeight: '600',
   },
   fab: {
     position: 'absolute',

@@ -1,7 +1,7 @@
 import { AIService } from './aiService.js';
 import { ExtractedTransaction } from '@ai-money/shared';
 
-interface LinkedUser {
+export interface LinkedUser {
   userId: string;
   phoneNumber: string;
 }

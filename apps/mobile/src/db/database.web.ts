@@ -1,7 +1,6 @@
-import { DEFAULT_EXPENSE_CATEGORIES, DEFAULT_INCOME_CATEGORIES } from '@ai-money/shared';
+import { DEFAULT_EXPENSE_CATEGORIES, DEFAULT_INCOME_CATEGORIES, type Ledger } from '@ai-money/shared';
 import { generateUUID } from '../utils/uuid';
 import { fromRows, toRows, initialLedger } from './serialization';
-import type { Ledger } from '../../../../packages/shared/src/finance';
 
 interface WebDBState {
   accounts: any[];
@@ -20,7 +19,9 @@ function loadState(): WebDBState {
       const saved = window.localStorage.getItem(STORAGE_KEY) || window.localStorage.getItem(LEGACY_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (!['accounts','categories','transactions','budgets'].every(k => Array.isArray(parsed[k]))) throw new Error('Datos locales dañados. Restaura una copia de seguridad.');
+        if (!parsed || typeof parsed !== 'object' || !['accounts','categories','transactions','budgets'].every(k => Array.isArray(parsed[k]))) {
+          throw new Error('Datos locales dañados. Restaura una copia de seguridad.');
+        }
         return parsed;
       }
     }

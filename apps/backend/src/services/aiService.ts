@@ -16,8 +16,8 @@ export class AIService {
     const draft = parseTransactionText(text, { accounts, categories, currency: options.userCurrency });
     return {
       ...draft,
-      category: categories.find((c: any) => c.id === draft.categoryId)?.name ?? '',
-      accountName: accounts.find((a: any) => a.id === draft.accountId)?.name,
+      category: categories.find(c => c.id === draft.categoryId)?.name ?? '',
+      accountName: accounts.find(a => a.id === draft.accountId)?.name,
       confidence: 0,
     } satisfies ExtractedTransaction & typeof draft;
   }

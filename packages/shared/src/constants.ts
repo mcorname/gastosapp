@@ -1,16 +1,16 @@
 import { Category } from './types.js';
 
 export const DEFAULT_EXPENSE_CATEGORIES: Omit<Category, 'id' | 'createdAt' | 'updatedAt'>[] = [
-  { name: 'Alimentación', icon: 'restaurant', color: '#EF4444', type: 'expense', isDefault: true },
-  { name: 'Transporte', icon: 'directions-car', color: '#F59E0B', type: 'expense', isDefault: true },
-  { name: 'Vivienda y Servicios', icon: 'home', color: '#3B82F6', type: 'expense', isDefault: true },
-  { name: 'Entretenimiento', icon: 'sports-esports', color: '#8B5CF6', type: 'expense', isDefault: true },
-  { name: 'Salud y Cuidado', icon: 'favorite', color: '#EC4899', type: 'expense', isDefault: true },
-  { name: 'Compras y Ropa', icon: 'shopping-bag', color: '#14B8A6', type: 'expense', isDefault: true },
-  { name: 'Educación', icon: 'school', color: '#6366F1', type: 'expense', isDefault: true },
-  { name: 'Viajes', icon: 'flight', color: '#06B6D4', type: 'expense', isDefault: true },
-  { name: 'Suscripciones', icon: 'subscriptions', color: '#64748B', type: 'expense', isDefault: true },
-  { name: 'Otros Gastos', icon: 'more-horiz', color: '#94A3B8', type: 'expense', isDefault: true },
+  { name: 'Alimentación', icon: 'restaurant', color: '#EA580C', type: 'expense', isDefault: true },
+  { name: 'Transporte', icon: 'directions-car', color: '#16A34A', type: 'expense', isDefault: true },
+  { name: 'Vivienda y Servicios', icon: 'home', color: '#2563EB', type: 'expense', isDefault: true },
+  { name: 'Entretenimiento', icon: 'sports-esports', color: '#9333EA', type: 'expense', isDefault: true },
+  { name: 'Salud y Cuidado', icon: 'favorite', color: '#E11D48', type: 'expense', isDefault: true },
+  { name: 'Compras y Ropa', icon: 'shopping-bag', color: '#0D9488', type: 'expense', isDefault: true },
+  { name: 'Educación', icon: 'school', color: '#4F46E5', type: 'expense', isDefault: true },
+  { name: 'Viajes', icon: 'flight', color: '#0284C7', type: 'expense', isDefault: true },
+  { name: 'Suscripciones', icon: 'subscriptions', color: '#D97706', type: 'expense', isDefault: true },
+  { name: 'Otros Gastos', icon: 'more-horiz', color: '#64748B', type: 'expense', isDefault: true },
 ];
 
 export const DEFAULT_INCOME_CATEGORIES: Omit<Category, 'id' | 'createdAt' | 'updatedAt'>[] = [

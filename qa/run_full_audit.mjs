@@ -2,7 +2,7 @@ import { chromium } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'fs';
 
-const TARGET_URL = 'https://backend-gold-omega-57.vercel.app/';
+const TARGET_URL = process.env.TEST_URL || process.env.BASE_URL || 'http://localhost:3001/';
 
 async function audit() {
   console.log('=== STARTING COMPREHENSIVE QA AUDIT ON VERCEL ===');

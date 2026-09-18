@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Platform } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useFinance } from '../context/FinanceContext';
 import { tokens } from '../theme/tokens';
@@ -59,8 +59,12 @@ export const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ onViewAll 
               {/* Row: [icon] Name ... Amount */}
               <View style={styles.topRow}>
                 <View style={styles.nameRow}>
-                  <CategoryIcon categoryName={cat.name} size={13} boxSize={24} borderRadius={6} />
-                  <Text style={styles.catName} numberOfLines={1}>
+                  <CategoryIcon categoryName={cat.name} size={14} boxSize={26} borderRadius={6} />
+                  <Text
+                    style={styles.catName}
+                    numberOfLines={1}
+                    {...(Platform.OS === 'web' ? ({ title: cat.name } as any) : {})}
+                  >
                     {cat.name}
                   </Text>
                 </View>
@@ -107,7 +111,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 15,
-    fontWeight: '650' as any,
+    fontWeight: '600',
     color: tokens.colors.textPrimary,
     letterSpacing: -0.2,
   },
@@ -146,7 +150,7 @@ const styles = StyleSheet.create({
   },
   catAmount: {
     fontSize: 13.5,
-    fontWeight: '650' as any,
+    fontWeight: '600',
     color: tokens.colors.textPrimary,
     fontVariant: ['tabular-nums'],
   },

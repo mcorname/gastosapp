@@ -1,172 +1,191 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Feather, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+import { View, Text, StyleSheet, Platform, type StyleProp, type ViewStyle, type TextStyle } from 'react-native';
+import { Feather, MaterialCommunityIcons, FontAwesome6, MaterialIcons } from '@expo/vector-icons';
+import {
+  resolveCategoryMeta,
+  CATEGORY_CATALOG,
+  type CategoryVisualConfig,
+  type SupportedIconSet,
+} from '../theme/categoryCatalog';
+
+export type { CategoryVisualConfig, SupportedIconSet };
+export { CATEGORY_CATALOG, resolveCategoryMeta };
 
 export interface CategoryMeta {
   color: string;
   bg: string;
+  border: string;
   iconName: string;
-  iconSet: 'feather' | 'mci' | 'mi';
+  iconSet: SupportedIconSet;
   label: string;
+  activeBg: string;
+  activeBorder: string;
+  activeText: string;
 }
 
 export function getCategoryMeta(name: string = ''): CategoryMeta {
-  const n = name.toLowerCase();
-  if (
-    n.includes('vivienda') ||
-    n.includes('servicio') ||
-    n.includes('luz') ||
-    n.includes('agua') ||
-    n.includes('gas') ||
-    n.includes('hogar') ||
-    n.includes('alquiler')
-  ) {
-    return {
-      color: '#4F8EF7',
-      bg: '#EDF4FF',
-      iconName: 'home',
-      iconSet: 'feather',
-      label: 'Vivienda y Servicios',
-    };
-  }
-  if (
-    n.includes('ropa') ||
-    n.includes('compra') ||
-    n.includes('shopping') ||
-    n.includes('saga') ||
-    n.includes('ripley') ||
-    n.includes('tienda')
-  ) {
-    return {
-      color: '#13A878',
-      bg: '#EAF8F3',
-      iconName: 'shopping-bag',
-      iconSet: 'feather',
-      label: 'Compras y Ropa',
-    };
-  }
-  if (
-    n.includes('aliment') ||
-    n.includes('comida') ||
-    n.includes('restaurante') ||
-    n.includes('almuerzo') ||
-    n.includes('supermercado') ||
-    n.includes('vea') ||
-    n.includes('metro')
-  ) {
-    return {
-      color: '#FF6257',
-      bg: '#FFF0EE',
-      iconName: 'silverware-fork-knife',
-      iconSet: 'mci',
-      label: 'Alimentación',
-    };
-  }
-  if (
-    n.includes('transporte') ||
-    n.includes('auto') ||
-    n.includes('carro') ||
-    n.includes('gasolina') ||
-    n.includes('taxi') ||
-    n.includes('uber') ||
-    n.includes('pasaje')
-  ) {
-    return {
-      color: '#F39A38',
-      bg: '#FFF5E9',
-      iconName: 'car',
-      iconSet: 'mci',
-      label: 'Transporte',
-    };
-  }
-  if (
-    n.includes('salud') ||
-    n.includes('farmacia') ||
-    n.includes('medico') ||
-    n.includes('doctor') ||
-    n.includes('clinica') ||
-    n.includes('cuidado')
-  ) {
-    return {
-      color: '#EE5A9E',
-      bg: '#FFF0F7',
-      iconName: 'heart-pulse',
-      iconSet: 'mci',
-      label: 'Salud',
-    };
-  }
-  if (
-    n.includes('entretenimiento') ||
-    n.includes('cine') ||
-    n.includes('pelicula') ||
-    n.includes('juego') ||
-    n.includes('streaming') ||
-    n.includes('netflix') ||
-    n.includes('spotify')
-  ) {
-    return {
-      color: '#7657E8',
-      bg: '#F2EFFF',
-      iconName: 'movie-open',
-      iconSet: 'mci',
-      label: 'Entretenimiento',
-    };
-  }
-  if (
-    n.includes('educa') ||
-    n.includes('curso') ||
-    n.includes('libro') ||
-    n.includes('universidad') ||
-    n.includes('colegio')
-  ) {
-    return {
-      color: '#556FE8',
-      bg: '#EEF1FF',
-      iconName: 'book-open',
-      iconSet: 'feather',
-      label: 'Educación',
-    };
-  }
+  const meta = resolveCategoryMeta(name);
   return {
-    color: '#74777F',
-    bg: '#F0F1F2',
-    iconName: 'more-horizontal',
-    iconSet: 'feather',
-    label: name || 'Otros',
+    color: meta.color,
+    bg: meta.bg,
+    border: meta.border,
+    iconName: meta.iconName,
+    iconSet: meta.iconSet,
+    label: meta.label,
+    activeBg: meta.activeBg,
+    activeBorder: meta.activeBorder,
+    activeText: meta.activeText,
   };
 }
 
-export const CategoryIcon: React.FC<{
+export interface CategoryIconProps {
   categoryName: string;
   size?: number;
   boxSize?: number;
   borderRadius?: number;
-}> = ({ categoryName, size = 15, boxSize = 32, borderRadius = 8 }) => {
-  const meta = getCategoryMeta(categoryName);
+  containerStyle?: StyleProp<ViewStyle>;
+  customColor?: string;
+  customBg?: string;
+}
+
+export const CategoryIcon: React.FC<CategoryIconProps> = ({
+  categoryName,
+  size = 15,
+  boxSize = 28,
+  borderRadius = 7,
+  containerStyle,
+  customColor,
+  customBg,
+}) => {
+  const meta = resolveCategoryMeta(categoryName);
+  const iconColor = customColor || meta.color;
+  const bgColor = customBg || meta.bg;
 
   const renderIcon = () => {
-    if (meta.iconSet === 'feather') {
-      return <Feather name={meta.iconName as any} size={size} color={meta.color} />;
+    switch (meta.iconSet) {
+      case 'fa6':
+        return (
+          <FontAwesome6
+            name={meta.iconName as any}
+            size={size}
+            color={iconColor}
+          />
+        );
+      case 'mci':
+        return (
+          <MaterialCommunityIcons
+            name={meta.iconName as any}
+            size={size}
+            color={iconColor}
+          />
+        );
+      case 'mi':
+        return (
+          <MaterialIcons
+            name={meta.iconName as any}
+            size={size}
+            color={iconColor}
+          />
+        );
+      case 'feather':
+      default:
+        return (
+          <Feather
+            name={meta.iconName as any}
+            size={size}
+            color={iconColor}
+          />
+        );
     }
-    if (meta.iconSet === 'mci') {
-      return <MaterialCommunityIcons name={meta.iconName as any} size={size} color={meta.color} />;
-    }
-    return <MaterialIcons name={meta.iconName as any} size={size} color={meta.color} />;
   };
 
   return (
     <View
-      style={{
-        width: boxSize,
-        height: boxSize,
-        borderRadius,
-        backgroundColor: meta.bg,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      accessibilityElementsHidden={true}
+      importantForAccessibility="no"
+      {...(Platform.OS === 'web' ? ({ 'aria-hidden': 'true' } as any) : {})}
+      style={[
+        styles.iconWrapper,
+        {
+          width: boxSize,
+          height: boxSize,
+          borderRadius,
+          backgroundColor: bgColor,
+        },
+        containerStyle,
+      ]}
     >
       {renderIcon()}
     </View>
   );
 };
 
+export interface CategoryDisplayProps {
+  categoryName: string;
+  size?: number;
+  boxSize?: number;
+  borderRadius?: number;
+  numberOfLines?: number;
+  style?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
+  showLabel?: boolean;
+}
+
+/**
+ * Componente unificado para renderizar categoría (icono de ancho fijo 28px + texto alineado).
+ * Garantiza que todos los iconos comiencen exactamente en la misma coordenada X
+ * y que el texto comience siempre a 8px exactos de distancia.
+ */
+export const CategoryDisplay: React.FC<CategoryDisplayProps> = ({
+  categoryName,
+  size = 15,
+  boxSize = 28,
+  borderRadius = 7,
+  numberOfLines = 1,
+  style,
+  textStyle,
+  showLabel = true,
+}) => {
+  const meta = resolveCategoryMeta(categoryName);
+
+  return (
+    <View style={[styles.displayRow, style]}>
+      <CategoryIcon
+        categoryName={categoryName}
+        size={size}
+        boxSize={boxSize}
+        borderRadius={borderRadius}
+      />
+      {showLabel && (
+        <Text
+          style={[styles.labelText, textStyle]}
+          numberOfLines={numberOfLines}
+          {...(Platform.OS === 'web' ? ({ title: categoryName || meta.label } as any) : {})}
+        >
+          {categoryName || meta.label}
+        </Text>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  iconWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexShrink: 0,
+  },
+  displayRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    minWidth: 0,
+  },
+  labelText: {
+    fontSize: 13,
+    fontWeight: '500',
+    color: '#1E293B',
+    minWidth: 0,
+    flexShrink: 1,
+  },
+});

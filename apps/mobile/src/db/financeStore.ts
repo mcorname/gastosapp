@@ -1,5 +1,5 @@
-import type { Account, Category, Transaction } from '../../../../packages/shared/src/types';
-import { cents, getBalances, localDate, validMoney, validateTransaction, type Ledger, type TransactionInput } from '../../../../packages/shared/src/finance';
+import type { Account, Category, Transaction, Ledger, TransactionInput } from '@ai-money/shared';
+import { cents, getBalances, localDate, validMoney, validateTransaction } from '@ai-money/shared';
 import { generateUUID } from '../utils/uuid';
 
 export interface LedgerAdapter { read(): Ledger; write(data: Ledger): void; }

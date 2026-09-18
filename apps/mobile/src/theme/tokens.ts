@@ -66,47 +66,47 @@ export const tokens = {
       '-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Segoe UI", sans-serif',
     patrimonio: {
       fontSize: 34,
-      fontWeight: '650' as any,
+      fontWeight: '700' as const,
       letterSpacing: -0.6,
     },
     title1: {
       fontSize: 22,
-      fontWeight: '650' as any,
+      fontWeight: '700' as const,
       letterSpacing: -0.4,
     },
     title2: {
       fontSize: 18,
-      fontWeight: '600' as any,
+      fontWeight: '600' as const,
       letterSpacing: -0.2,
     },
     title3: {
       fontSize: 16,
-      fontWeight: '600' as any,
+      fontWeight: '600' as const,
     },
     body: {
       fontSize: 14,
-      fontWeight: '400' as any,
+      fontWeight: '400' as const,
       lineHeight: 20,
     },
     bodyMedium: {
       fontSize: 14,
-      fontWeight: '500' as any,
+      fontWeight: '500' as const,
     },
     bodySemibold: {
       fontSize: 14,
-      fontWeight: '600' as any,
+      fontWeight: '600' as const,
     },
     metadata: {
       fontSize: 12,
-      fontWeight: '400' as any,
+      fontWeight: '400' as const,
     },
     caption: {
       fontSize: 11,
-      fontWeight: '500' as any,
+      fontWeight: '500' as const,
     },
     tabularAmount: {
-      fontVariant: ['tabular-nums'] as any,
-      fontWeight: '600' as any,
+      fontVariant: ['tabular-nums'] as ('tabular-nums')[],
+      fontWeight: '600' as const,
     },
   },
 

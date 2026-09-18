@@ -2,8 +2,8 @@ import { chromium } from '@playwright/test';
 
 async function test() {
   const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-  await page.goto('https://backend-gold-omega-57.vercel.app/', { waitUntil: 'networkidle' });
+  const targetUrl = process.env.TEST_URL || 'http://localhost:3001/';
+  await page.goto(targetUrl, { waitUntil: 'networkidle' });
   await page.waitForTimeout(2000);
 
   console.log('Testing Net Worth Card Click by aria-label...');

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Platform,
   Alert,
+  ScrollView,
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { EnrichedTransaction } from '../db/repositories/transactionRepository';
@@ -207,17 +208,41 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
               </TouchableOpacity>
               {categories
                 .filter((c) => c.type === 'expense')
-                .map((cat) => (
-                  <TouchableOpacity
-                    key={cat.id}
-                    style={[styles.chip, selectedCategory === cat.id && styles.chipActive]}
-                    onPress={() => setSelectedCategory(cat.id)}
-                  >
-                    <Text style={[styles.chipText, selectedCategory === cat.id && styles.chipTextActive]}>
-                      {cat.name}
-                    </Text>
-                  </TouchableOpacity>
-                ))}
+                .map((cat) => {
+                  const meta = getCategoryMeta(cat.name);
+                  const isSelected = selectedCategory === cat.id;
+                  return (
+                    <TouchableOpacity
+                      key={cat.id}
+                      style={[
+                        styles.chip,
+                        styles.categoryChip,
+                        isSelected && {
+                          backgroundColor: meta.activeBg,
+                          borderColor: meta.activeBorder,
+                        },
+                      ]}
+                      onPress={() => setSelectedCategory(cat.id)}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Filtrar por ${cat.name}`}
+                    >
+                      <CategoryIcon
+                        categoryName={cat.name}
+                        size={11}
+                        boxSize={18}
+                        borderRadius={4}
+                      />
+                      <Text
+                        style={[
+                          styles.chipText,
+                          isSelected && { color: meta.activeText, fontWeight: '600' },
+                        ]}
+                      >
+                        {cat.name}
+                      </Text>
+                    </TouchableOpacity>
+                  );
+                })}
             </View>
           </View>
 
@@ -261,67 +286,72 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
 
       {/* Main Table Card */}
       <View style={styles.tableCard}>
-        {/* Table Column Headers */}
-        <View style={styles.columnsHeaderRow}>
-          <TouchableOpacity
-            style={[styles.thCell, { flex: 2.2 }]}
-            onPress={() => handleSort('merchant')}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.thText}>Descripción</Text>
-            {sortCol === 'merchant' && (
-              <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
-            )}
-          </TouchableOpacity>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ minWidth: 680, width: '100%', flexDirection: 'column' }}
+        >
+          {/* Table Column Headers */}
+          <View style={styles.columnsHeaderRow}>
+            <TouchableOpacity
+              style={[styles.thCell, { flex: 2.2, flexBasis: 0, minWidth: 0 }]}
+              onPress={() => handleSort('merchant')}
+              activeOpacity={0.7}
+            >
+              <Text style={styles.thText}>Descripción</Text>
+              {sortCol === 'merchant' && (
+                <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
+              )}
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.thCell, { flex: 1.8 }]}
-            onPress={() => handleSort('category')}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.thText}>Categoría</Text>
-            {sortCol === 'category' && (
-              <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
-            )}
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.thCell, { flex: 2.0, flexBasis: 0, minWidth: 0 }]}
+              onPress={() => handleSort('category')}
+              activeOpacity={0.7}
+            >
+              <Text style={styles.thText}>Categoría</Text>
+              {sortCol === 'category' && (
+                <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
+              )}
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.thCell, { flex: 1.8 }]}
-            onPress={() => handleSort('account')}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.thText}>Cuenta</Text>
-            {sortCol === 'account' && (
-              <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
-            )}
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.thCell, { flex: 1.6, flexBasis: 0, minWidth: 0 }]}
+              onPress={() => handleSort('account')}
+              activeOpacity={0.7}
+            >
+              <Text style={styles.thText}>Cuenta</Text>
+              {sortCol === 'account' && (
+                <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
+              )}
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.thCell, { flex: 1.2 }]}
-            onPress={() => handleSort('date')}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.thText}>Fecha</Text>
-            {sortCol === 'date' && (
-              <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
-            )}
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.thCell, { flex: 1.1, flexBasis: 0, minWidth: 0 }]}
+              onPress={() => handleSort('date')}
+              activeOpacity={0.7}
+            >
+              <Text style={styles.thText}>Fecha</Text>
+              {sortCol === 'date' && (
+                <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
+              )}
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.thCell, { flex: 1.3, justifyContent: 'flex-end' }]}
-            onPress={() => handleSort('amount')}
-            activeOpacity={0.7}
-          >
-            <Text style={[styles.thText, { textAlign: 'right' }]}>Monto</Text>
-            {sortCol === 'amount' && (
-              <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
-            )}
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.thCell, { flex: 1.4, flexBasis: 0, minWidth: 0, justifyContent: 'flex-end' }]}
+              onPress={() => handleSort('amount')}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.thText, { textAlign: 'right' }]}>Monto</Text>
+              {sortCol === 'amount' && (
+                <Feather name={sortOrder === 'asc' ? 'chevron-up' : 'chevron-down'} size={12} color={tokens.colors.textPrimary} />
+              )}
+            </TouchableOpacity>
 
-          <View style={[styles.thCell, { width: 44, justifyContent: 'center' }]}>
-            <Text style={[styles.thText, { textAlign: 'center' }]}></Text>
+            <View style={[styles.thCell, { width: 44, flexShrink: 0, justifyContent: 'center' }]}>
+              <Text style={[styles.thText, { textAlign: 'center' }]}></Text>
+            </View>
           </View>
-        </View>
 
         {/* Rows */}
         {processedExpenses.length === 0 ? (
@@ -348,7 +378,7 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
                 ]}
               >
                 {/* 1. Descripción */}
-                <View style={[styles.tdCell, { flex: 2.2 }]}>
+                <View style={[styles.tdCell, { flex: 2.2, flexBasis: 0, minWidth: 0 }]}>
                   <Text style={styles.merchantTitle} numberOfLines={2}>
                     {tx.merchant}
                   </Text>
@@ -356,34 +386,43 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
                 </View>
 
                 {/* 2. Categoría */}
-                <View style={[styles.tdCell, { flex: 1.8, flexDirection: 'row', alignItems: 'center', gap: 8 }]}>
-                  <CategoryIcon categoryName={tx.categoryName} size={13} boxSize={26} borderRadius={6} />
-                  <Text style={styles.categoryTitle} numberOfLines={1}>
+                <View style={[styles.tdCell, styles.categoryCell]}>
+                  <CategoryIcon
+                    categoryName={tx.categoryName}
+                    size={15}
+                    boxSize={28}
+                    borderRadius={7}
+                  />
+                  <Text
+                    style={styles.categoryTitle}
+                    numberOfLines={1}
+                    {...(Platform.OS === 'web' ? ({ title: tx.categoryName } as any) : {})}
+                  >
                     {tx.categoryName}
                   </Text>
                 </View>
 
                 {/* 3. Cuenta */}
-                <View style={[styles.tdCell, { flex: 1.8 }]}>
+                <View style={[styles.tdCell, { flex: 1.6, flexBasis: 0, minWidth: 0 }]}>
                   <Text style={styles.accountTitle} numberOfLines={2}>
                     {tx.accountName}
                   </Text>
                 </View>
 
                 {/* 4. Fecha */}
-                <View style={[styles.tdCell, { flex: 1.2 }]}>
+                <View style={[styles.tdCell, { flex: 1.1, flexBasis: 0, minWidth: 0 }]}>
                   <Text style={styles.dateTitle}>{formatTableDate(tx.date)}</Text>
                 </View>
 
                 {/* 5. Monto (Coral en Negativo) */}
-                <View style={[styles.tdCell, { flex: 1.3, alignItems: 'flex-end' }]}>
+                <View style={[styles.tdCell, { flex: 1.4, flexBasis: 0, minWidth: 0, alignItems: 'flex-end' }]}>
                   <Text style={styles.amountTitle}>
                     -{displayMoney(tx.amount, tx.currency || currency)}
                   </Text>
                 </View>
 
                 {/* 6. Acciones (•••) */}
-                <View style={[styles.tdCell, { width: 44, alignItems: 'center', position: 'relative' }]}>
+                <View style={[styles.tdCell, { width: 44, flexShrink: 0, alignItems: 'center', position: 'relative' }]}>
                   <TouchableOpacity
                     style={styles.moreBtn}
                     onPress={() => setActiveMenuTxId(isMenuOpen ? null : tx.id)}
@@ -448,6 +487,7 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
             );
           })
         )}
+        </ScrollView>
       </View>
 
       {/* ========================================================
@@ -496,7 +536,7 @@ export const ExpenseTable: React.FC<ExpenseTableProps> = ({
               {categoryTotals.map((cat) => (
                 <View key={cat.id} style={styles.breakdownItem}>
                   <View style={styles.breakdownLeft}>
-                    <CategoryIcon categoryName={cat.name} size={12} boxSize={22} borderRadius={5} />
+                    <CategoryIcon categoryName={cat.name} size={13} boxSize={24} borderRadius={6} />
                     <Text style={styles.breakdownCatName} numberOfLines={1}>{cat.name}</Text>
                   </View>
                   <Text style={styles.breakdownCatAmount}>
@@ -696,10 +736,29 @@ const styles = StyleSheet.create({
     color: tokens.colors.textTertiary,
     marginTop: 1,
   },
+  categoryCell: {
+    flex: 2.0,
+    flexBasis: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    gap: 8,
+    minWidth: 0,
+  },
   categoryTitle: {
-    fontSize: 12.5,
+    fontSize: 13,
     fontWeight: '500',
     color: tokens.colors.textPrimary,
+    minWidth: 0,
+    flexShrink: 1,
+    ...(Platform.OS === 'web' ? ({ whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' } as any) : {}),
+  },
+  categoryChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingVertical: 5,
+    paddingHorizontal: 8,
   },
   accountTitle: {
     fontSize: 12,

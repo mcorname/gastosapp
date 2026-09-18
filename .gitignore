@@ -40,4 +40,6 @@ backups/
 debug-ai-money.png
 test-web-run.mjs
 .vercel/
+.agents/
+skills-lock.json
 

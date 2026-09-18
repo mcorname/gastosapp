@@ -11,7 +11,11 @@
     "mobile": "npm run --workspace=apps/mobile start",
     "backend": "npm run --workspace=apps/backend dev",
     "build:shared": "npm run --workspace=packages/shared build",
-    "build": "npm run build:shared && npm run --workspace=apps/mobile build"
+    "build:backend": "npm run --workspace=apps/backend build",
+    "build": "npm run build:shared && npm run --workspace=apps/mobile build",
+    "build:all": "npm run build:shared && npm run build:backend && npm run --workspace=apps/mobile build",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "npm run build:shared && tsc --noEmit -p packages/shared/tsconfig.json && tsc --noEmit -p apps/backend/tsconfig.json && tsc --noEmit -p apps/mobile/tsconfig.json"
   },
   "keywords": [
     "fintech",

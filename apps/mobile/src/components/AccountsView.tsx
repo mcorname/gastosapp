@@ -49,7 +49,7 @@ export const AccountsView: React.FC<AccountsViewProps> = ({
 
   // Form fields
   const [name, setName] = useState('');
-  const [type, setType] = useState('cash');
+  const [type, setType] = useState<Account['type']>('cash');
   const [initialBalance, setInitialBalance] = useState('0');
   const [accCurrency, setAccCurrency] = useState('PEN');
   const [formError, setFormError] = useState('');
@@ -68,7 +68,8 @@ export const AccountsView: React.FC<AccountsViewProps> = ({
     setSelectedAccount(acc);
     setName(acc.name);
     setType(acc.type);
-    setAccCurrency(acc.currency || 'PEN');
+    setInitialBalance(acc.initialBalance.toString());
+    setAccCurrency(acc.currency);
     setFormError('');
     setModalMode('edit');
   };
@@ -86,14 +87,14 @@ export const AccountsView: React.FC<AccountsViewProps> = ({
         const bal = parseFloat(initialBalance.replace(',', '.')) || 0;
         addAccount({
           name,
-          type: type as any,
+          type,
           currency: accCurrency,
           initialBalance: bal,
         });
       } else if (modalMode === 'edit' && selectedAccount) {
         updateAccount(selectedAccount.id, {
           name,
-          type: type as any,
+          type,
           currency: accCurrency,
         });
       } else if (modalMode === 'delete' && selectedAccount) {
@@ -266,7 +267,7 @@ export const AccountsView: React.FC<AccountsViewProps> = ({
         {(modalMode === 'new' || modalMode === 'edit') && (
           <>
             <Field label="Nombre de la cuenta" value={name} onChangeText={setName} placeholder="Ej. BCP Ahorros" />
-            <Choices label="Tipo de cuenta" value={type} onChange={setType} options={ACCOUNT_TYPES} />
+            <Choices label="Tipo de cuenta" value={type} onChange={(v) => setType(v as Account['type'])} options={ACCOUNT_TYPES} />
             {modalMode === 'new' ? (
               <>
                 <Field
@@ -396,7 +397,7 @@ const styles = StyleSheet.create({
   },
   cardAccountName: {
     fontSize: 15,
-    fontWeight: '650' as any,
+    fontWeight: '600',
     color: tokens.colors.textPrimary,
     letterSpacing: -0.2,
   },

@@ -12,6 +12,8 @@ interface CompactRailProps {
   onOpenMario: () => void;
 }
 
+const webTooltip = (title: string): { title?: string } => (Platform.OS === 'web' ? { title } : {});
+
 export const CompactRail: React.FC<CompactRailProps> = ({
   activeTab,
   onSelectTab,
@@ -37,7 +39,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={[styles.railIconBtn, activeTab === 'home' && styles.railIconBtnActive]}
           onPress={() => onSelectTab('home')}
           activeOpacity={0.7}
-          {...(Platform.OS === 'web' ? ({ title: 'Inicio' } as any) : {})}
+          {...webTooltip('Inicio')}
         >
           <Feather
             name="home"
@@ -53,7 +55,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={[styles.railIconBtn, activeTab === 'transactions' && styles.railIconBtnActive]}
           onPress={() => onSelectTab('transactions')}
           activeOpacity={0.7}
-          {...(Platform.OS === 'web' ? ({ title: 'Movimientos' } as any) : {})}
+          {...webTooltip('Movimientos')}
         >
           <Feather
             name="file-text"
@@ -69,7 +71,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={[styles.railIconBtn, activeTab === 'accounts' && styles.railIconBtnActive]}
           onPress={() => onSelectTab('accounts')}
           activeOpacity={0.7}
-          {...(Platform.OS === 'web' ? ({ title: 'Cuentas' } as any) : {})}
+          {...webTooltip('Cuentas')}
         >
           <Feather
             name="credit-card"
@@ -85,7 +87,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={styles.newActionBtn}
           onPress={onOpenNewTx}
           activeOpacity={0.85}
-          {...(Platform.OS === 'web' ? ({ title: 'Nuevo movimiento' } as any) : {})}
+          {...webTooltip('Nuevo movimiento')}
         >
           <Feather name="plus" size={18} color="#FFFFFF" />
         </TouchableOpacity>
@@ -97,7 +99,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={[styles.railIconBtn, activeTab === 'mario' && styles.railIconBtnActive]}
           onPress={onOpenMario}
           activeOpacity={0.7}
-          {...(Platform.OS === 'web' ? ({ title: 'Mario IA' } as any) : {})}
+          {...webTooltip('Mario IA')}
         >
           <MaterialIcons
             name="auto-awesome"
@@ -113,7 +115,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
           style={styles.aiTriggerBtn}
           onPress={onOpenQuickAI}
           activeOpacity={0.7}
-          {...(Platform.OS === 'web' ? ({ title: 'Registrar con IA' } as any) : {})}
+          {...webTooltip('Registrar con IA')}
         >
           <Feather name="zap" size={17} color={tokens.colors.brand} />
         </TouchableOpacity>
@@ -129,7 +131,7 @@ export const CompactRail: React.FC<CompactRailProps> = ({
         style={[styles.railIconBtn, activeTab === 'settings' && styles.railIconBtnActive]}
         onPress={() => onSelectTab('settings')}
         activeOpacity={0.7}
-        {...(Platform.OS === 'web' ? ({ title: 'Ajustes' } as any) : {})}
+        {...webTooltip('Ajustes')}
       >
         <Feather
           name="settings"
